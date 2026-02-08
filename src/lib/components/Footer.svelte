@@ -22,8 +22,8 @@
                 <div class="list-wrapper">
                     <ul class="list mbr-fonts-style display-4">
                         <li class="item-wrap"><span style="color: rgb(0, 0, 0); font-size: 1.1rem;"><a href="/contact" class="text-primary">Office Location</a></span><br></li>
-                        <li class="item-wrap">Terms and Conditions</li>
-                        <li class="item-wrap">Privacy Policy</li>
+                        <li class="item-wrap"><a href="/terms" class="text-primary">Terms and Conditions</a></li>
+                        <li class="item-wrap"><a href="/privacy" class="text-primary">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
