@@ -5,6 +5,7 @@ onMount(() => {
     const block = document.querySelector("section.gallery1");
     if (!block) return;
 
+    // Click-to-navigate on gallery items
     function getUrlFromAlt(altRaw) {
         const alt = (altRaw || "").trim();
         if (!alt) return "";
@@ -26,6 +27,43 @@ onMount(() => {
             window.location.href = url;
         }, true);
     });
+
+    // Filter click handling
+    const filterUl = block.querySelector(".mbr-gallery-filter ul");
+    if (filterUl) {
+        filterUl.querySelectorAll("li").forEach(li => {
+            li.addEventListener("click", e => {
+                e.preventDefault();
+                filterUl.querySelectorAll("li").forEach(l => l.classList.remove("active"));
+                li.classList.add("active");
+                const tag = li.querySelector("a").textContent.trim();
+                block.querySelectorAll(".mbr-gallery-item").forEach(item => {
+                    const tags = (item.getAttribute("data-tags") || "").split(",").map(t => t.trim());
+                    if (li.classList.contains("mbr-gallery-filter-all") || tags.includes(tag)) {
+                        item.classList.remove("mbr-gallery-item__hided");
+                    } else {
+                        item.classList.add("mbr-gallery-item__hided");
+                    }
+                });
+                // Re-layout masonry
+                const row = block.querySelector(".mbr-gallery-row");
+                if (row) row.dispatchEvent(new CustomEvent("filter"));
+            });
+        });
+    }
+
+    // Masonry layout
+    const row = block.querySelector(".mbr-gallery-row");
+    if (row && typeof Masonry !== "undefined" && typeof imagesLoaded !== "undefined") {
+        imagesLoaded(row).on("progress", () => {
+            const msnry = new Masonry(row, {
+                itemSelector: ".mbr-gallery-item:not(.mbr-gallery-item__hided)",
+                percentPosition: true,
+                horizontalOrder: true
+            });
+            row.addEventListener("filter", () => { msnry.reloadItems(); msnry.layout(); });
+        });
+    }
 });
 </script>
 
@@ -42,7 +80,12 @@ onMount(() => {
     <div class="container">
         <div class="col-left-gallery">
             <div class="mbr-gallery-filter container gallery-filter-active">
-                <ul><li class="mbr-gallery-filter-all active"><a class="btn btn-md btn-primary-outline display-7" href="#">All</a></li></ul>
+                <ul>
+                    <li class="mbr-gallery-filter-all active"><a class="btn btn-md btn-primary-outline display-7" href="#">All</a></li>
+                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Commercial</a></li>
+                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Healthcare</a></li>
+                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Residential</a></li>
+                </ul>
             </div>
             <div class="mbr-gallery-row">
                 <div class="mbr-gallery-layout-default">
