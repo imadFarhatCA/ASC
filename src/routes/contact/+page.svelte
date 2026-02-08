@@ -12,7 +12,7 @@
             <div class="col-12"></div>
         </div>
         <div class="map-wrap">
-            <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQ55g-IgRRgXrd803PTWDTb7kd6aAitNQ&amp;q=92-5889 av. Centennial" allowfullscreen=""></iframe></div>
+            <div class="google-map"><iframe frameborder="0" style="border:0" src="https://maps.google.com/maps?q=92-5889+av.+Centennial,+C%C3%B4te-Saint-Luc,+Quebec+H4W+1T2&output=embed" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
     </div>
 </section>
