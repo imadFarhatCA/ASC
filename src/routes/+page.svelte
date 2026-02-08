@@ -1,3 +1,12 @@
+<script>
+    import { onMount } from 'svelte';
+    onMount(() => {
+        if (typeof CircularProgressBar !== 'undefined') {
+            new CircularProgressBar('pie_progress');
+        }
+    });
+</script>
+
 <svelte:head>
 	<title>Home | Art Specialized Construction</title>
 </svelte:head>
@@ -285,8 +294,8 @@
         <div class="media-container-row pt-5 mt-2">
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress1" role="progressbar" data-goal="55">
-                        <p class="pie_progress__number mbr-fonts-style display-5"></p>
+                    <div class="pie_progress progress1" role="progressbar" data-goal="55" data-pie='{"percent":55,"size":150,"colorCircle":"#f1f1f1","stroke":5,"colorSlice":"#7eb7bf","fontSize":"1.3rem","number":false}'>
+                        <p class="pie_progress__number mbr-fonts-style display-5">55%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
@@ -295,8 +304,8 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress2" role="progressbar" data-goal="20">
-                        <p class="pie_progress__number mbr-fonts-style display-5">73%</p>
+                    <div class="pie_progress progress2" role="progressbar" data-goal="20" data-pie='{"percent":20,"size":150,"colorCircle":"#f1f1f1","stroke":5,"colorSlice":"#7eb7bf","fontSize":"1.3rem","number":false}'>
+                        <p class="pie_progress__number mbr-fonts-style display-5">20%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
@@ -305,8 +314,8 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress3" role="progressbar" data-goal="25">
-                        <p class="pie_progress__number mbr-fonts-style display-5"></p>
+                    <div class="pie_progress progress3" role="progressbar" data-goal="25" data-pie='{"percent":25,"size":150,"colorCircle":"#f1f1f1","stroke":5,"colorSlice":"#7eb7bf","fontSize":"1.3rem","number":false}'>
+                        <p class="pie_progress__number mbr-fonts-style display-5">25%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
@@ -315,8 +324,8 @@
             </div>
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress4" role="progressbar" data-goal="60">
-                        <p class="pie_progress__number mbr-fonts-style display-5"></p>
+                    <div class="pie_progress progress4" role="progressbar" data-goal="60" data-pie='{"percent":60,"size":150,"colorCircle":"#f1f1f1","stroke":5,"colorSlice":"#7eb7bf","fontSize":"1.3rem","number":false}'>
+                        <p class="pie_progress__number mbr-fonts-style display-5">60%</p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
