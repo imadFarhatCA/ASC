@@ -44,15 +44,66 @@
                                     <option value="+44">🇬🇧 +44</option>
                                     <option value="+33">🇫🇷 +33</option>
                                     <option value="+49">🇩🇪 +49</option>
+                                    <option value="+39">🇮🇹 +39</option>
+                                    <option value="+34">🇪🇸 +34</option>
+                                    <option value="+31">🇳🇱 +31</option>
+                                    <option value="+32">🇧🇪 +32</option>
+                                    <option value="+41">🇨🇭 +41</option>
+                                    <option value="+43">🇦🇹 +43</option>
+                                    <option value="+46">🇸🇪 +46</option>
+                                    <option value="+47">🇳🇴 +47</option>
+                                    <option value="+45">🇩🇰 +45</option>
+                                    <option value="+358">🇫🇮 +358</option>
+                                    <option value="+351">🇵🇹 +351</option>
+                                    <option value="+30">🇬🇷 +30</option>
+                                    <option value="+48">🇵🇱 +48</option>
+                                    <option value="+7">🇷🇺 +7</option>
+                                    <option value="+380">🇺🇦 +380</option>
                                     <option value="+966">🇸🇦 +966</option>
                                     <option value="+965">🇰🇼 +965</option>
                                     <option value="+971">🇦🇪 +971</option>
+                                    <option value="+974">🇶🇦 +974</option>
+                                    <option value="+973">🇧🇭 +973</option>
+                                    <option value="+968">🇴🇲 +968</option>
                                     <option value="+961">🇱🇧 +961</option>
+                                    <option value="+962">🇯🇴 +962</option>
+                                    <option value="+963">🇸🇾 +963</option>
+                                    <option value="+964">🇮🇶 +964</option>
+                                    <option value="+98">🇮🇷 +98</option>
+                                    <option value="+90">🇹🇷 +90</option>
+                                    <option value="+972">🇮🇱 +972</option>
                                     <option value="+20">🇪🇬 +20</option>
                                     <option value="+212">🇲🇦 +212</option>
+                                    <option value="+216">🇹🇳 +216</option>
+                                    <option value="+213">🇩🇿 +213</option>
+                                    <option value="+218">🇱🇾 +218</option>
+                                    <option value="+249">🇸🇩 +249</option>
+                                    <option value="+251">🇪🇹 +251</option>
+                                    <option value="+254">🇰🇪 +254</option>
+                                    <option value="+234">🇳🇬 +234</option>
+                                    <option value="+27">🇿🇦 +27</option>
                                     <option value="+91">🇮🇳 +91</option>
+                                    <option value="+92">🇵🇰 +92</option>
+                                    <option value="+880">🇧🇩 +880</option>
+                                    <option value="+94">🇱🇰 +94</option>
+                                    <option value="+86">🇨🇳 +86</option>
+                                    <option value="+81">🇯🇵 +81</option>
+                                    <option value="+82">🇰🇷 +82</option>
+                                    <option value="+60">🇲🇾 +60</option>
+                                    <option value="+65">🇸🇬 +65</option>
+                                    <option value="+66">🇹🇭 +66</option>
+                                    <option value="+84">🇻🇳 +84</option>
+                                    <option value="+62">🇮🇩 +62</option>
+                                    <option value="+63">🇵🇭 +63</option>
                                     <option value="+61">🇦🇺 +61</option>
+                                    <option value="+64">🇳🇿 +64</option>
                                     <option value="+55">🇧🇷 +55</option>
+                                    <option value="+52">🇲🇽 +52</option>
+                                    <option value="+54">🇦🇷 +54</option>
+                                    <option value="+57">🇨🇴 +57</option>
+                                    <option value="+56">🇨🇱 +56</option>
+                                    <option value="+51">🇵🇪 +51</option>
+                                    <option value="+58">🇻🇪 +58</option>
                                 </select>
                                 <input type="tel" name="url" placeholder="Phone Number" data-form-field="url" class="form-control" value="" id="url-form5-11" style="border-radius:0 4px 4px 0;">
                             </div>
@@ -76,7 +127,9 @@
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">E-Mail</h3>
                     <p class="card-text align-left mbr-fonts-style pb-5 display-7">info@artspecialized.com</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Address</h3>
-                    <p class="card-text align-left mbr-fonts-style pb-5 display-7">Art Specialized Constructions inc.<br>92-5889 av. Centennial<br>Côte-Saint-Luc, Québec H4W 1T2, Canada</p>
+                    <p class="card-text align-left mbr-fonts-style display-7">Art Specialized Constructions inc.<br>92-5889 av. Centennial<br>Côte-Saint-Luc, Québec H4W 1T2, Canada</p>
+                    <h3 class="card-title align-left mbr-fonts-style mb-3 mt-4 display-7">Phone Number</h3>
+                    <p class="card-text align-left mbr-fonts-style pb-5 display-7">+1 (514) 416 7330</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Social Media Channels</h3>
                     <div class="icons-wrapper">
                         <div class="icon-wrapper">
@@ -96,12 +149,6 @@
                             <p class="link-text pt-2 mbr-fonts-style display-4">wether you prefer phone calls, emails, social media channels, we are always available to answer any inquiries</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 col-md-6">
-                <div class="item">
-                    <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Phone Number</h3>
-                    <p class="card-text align-left mbr-fonts-style pb-5 display-7">+1 (514) 416 7330</p>
                 </div>
             </div>
         </div>

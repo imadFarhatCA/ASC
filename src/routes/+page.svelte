@@ -2,27 +2,33 @@
     .cta-arrow {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.6rem;
         color: #fff;
         text-decoration: none;
-        font-weight: 500;
-        letter-spacing: 0.08em;
+        font-weight: 600;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
-        font-size: 0.85rem;
-        padding: 0.6rem 0;
-        border-bottom: 1px solid rgba(255,255,255,0.5);
-        transition: border-color 0.3s ease, gap 0.3s ease;
+        font-size: 0.9rem;
+        padding: 0.85rem 2rem;
+        border: 2px solid rgba(255,255,255,0.8);
+        border-radius: 2px;
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(4px);
+        transition: background 0.3s ease, border-color 0.3s ease, gap 0.3s ease;
+        margin-top: 0.5rem;
     }
     .cta-arrow:hover {
         color: #fff;
-        border-bottom-color: #fff;
-        gap: 0.85rem;
+        background: rgba(255,255,255,0.2);
+        border-color: #fff;
+        gap: 1rem;
     }
     .cta-arrow-icon {
+        font-size: 1.1em;
         transition: transform 0.3s ease;
     }
     .cta-arrow:hover .cta-arrow-icon {
-        transform: translateX(4px);
+        transform: translateX(5px);
     }
 </style>
 
