@@ -24,11 +24,10 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="https://api.web3forms.com/submit" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
-                    <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE">
-                    <input type="hidden" name="subject" value="New Contact Form - Art Specialized Construction">
-                    <input type="hidden" name="from_name" value="ASC Website">
-                    <input type="hidden" name="redirect" value="false">
+                <form action="https://formsubmit.co/info@artspecializedconstruction.com" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
+                    <input type="hidden" name="_subject" value="New Contact Form - Art Specialized Construction">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="false">
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
