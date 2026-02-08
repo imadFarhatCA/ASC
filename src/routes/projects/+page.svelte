@@ -52,6 +52,29 @@ onMount(() => {
         });
     }
 
+    // Apply filter from URL query param (e.g. ?filter=Commercial)
+    function applyFilter(tag) {
+        if (!filterUl) return;
+        filterUl.querySelectorAll("li").forEach(li => {
+            li.classList.remove("active");
+            const liTag = li.querySelector("a").textContent.trim();
+            if ((!tag && li.classList.contains("mbr-gallery-filter-all")) || liTag === tag) {
+                li.classList.add("active");
+            }
+        });
+        block.querySelectorAll(".mbr-gallery-item").forEach(item => {
+            const tags = (item.getAttribute("data-tags") || "").split(",").map(t => t.trim());
+            if (!tag || tags.includes(tag)) {
+                item.classList.remove("mbr-gallery-item__hided");
+            } else {
+                item.classList.add("mbr-gallery-item__hided");
+            }
+        });
+    }
+
+    const urlFilter = new URLSearchParams(window.location.search).get("filter");
+    if (urlFilter) applyFilter(urlFilter);
+
     // Masonry layout
     const row = block.querySelector(".mbr-gallery-row");
     if (row && typeof Masonry !== "undefined" && typeof imagesLoaded !== "undefined") {

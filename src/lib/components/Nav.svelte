@@ -1,3 +1,14 @@
+<style>
+@media (max-width: 991px) {
+    .cid-uJmLvvI4S8 .navbar-logo img {
+        height: 4.9rem !important;
+    }
+    .cid-uJmLvvI4S8 .navbar-caption {
+        font-size: 0.85em !important;
+    }
+}
+</style>
+
 <section data-bs-version="5.1" class="menu menu2 cid-uJmLvvI4S8" id="menu2-1">
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">

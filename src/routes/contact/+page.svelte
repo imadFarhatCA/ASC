@@ -37,7 +37,25 @@
                             <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form5-11">
                         </div>
                         <div class="col-12 form-group mb-3" data-for="url">
-                            <input type="url" name="url" placeholder="Phone Number" data-form-field="url" class="form-control" value="" id="url-form5-11">
+                            <div class="input-group">
+                                <select class="form-control" name="phone_code" style="max-width:130px;border-right:0;border-radius:4px 0 0 4px;">
+                                    <option value="+1">🇨🇦 +1</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+33">🇫🇷 +33</option>
+                                    <option value="+49">🇩🇪 +49</option>
+                                    <option value="+966">🇸🇦 +966</option>
+                                    <option value="+965">🇰🇼 +965</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                    <option value="+961">🇱🇧 +961</option>
+                                    <option value="+20">🇪🇬 +20</option>
+                                    <option value="+212">🇲🇦 +212</option>
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+55">🇧🇷 +55</option>
+                                </select>
+                                <input type="tel" name="url" placeholder="Phone Number" data-form-field="url" class="form-control" value="" id="url-form5-11" style="border-radius:0 4px 4px 0;">
+                            </div>
                         </div>
                         <div class="col-12 form-group mb-3" data-for="textarea">
                             <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form5-11"></textarea>

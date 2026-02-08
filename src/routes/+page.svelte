@@ -1,3 +1,31 @@
+<style>
+    .cta-arrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        transition: border-color 0.3s ease, gap 0.3s ease;
+    }
+    .cta-arrow:hover {
+        color: #fff;
+        border-bottom-color: #fff;
+        gap: 0.85rem;
+    }
+    .cta-arrow-icon {
+        transition: transform 0.3s ease;
+    }
+    .cta-arrow:hover .cta-arrow-icon {
+        transform: translateX(4px);
+    }
+</style>
+
 <script>
     import { onMount } from 'svelte';
     onMount(() => {
@@ -28,7 +56,7 @@
                                                 <div class="title-wrap">
                                                     <h4 class="item-title mbr-fonts-style display-2">Taking construction to the next level<br></h4>
                                                 </div>
-                                                <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="/projects">more details</a></div>
+                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-arrow-icon">→</span></a></div>
                                             </div>
                                             <div class="name-wrapper"><div class="name-wrap"></div></div>
                                         </div>
@@ -45,7 +73,7 @@
                                                 <div class="title-wrap">
                                                     <h4 class="item-title mbr-fonts-style display-2">Setting your mind at ease by delivering top quality renovation works<br></h4>
                                                 </div>
-                                                <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="/projects">more details</a></div>
+                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-arrow-icon">→</span></a></div>
                                             </div>
                                             <div class="name-wrapper"><div class="name-wrap"></div></div>
                                         </div>
@@ -62,7 +90,7 @@
                                                 <div class="title-wrap">
                                                     <h4 class="item-title mbr-fonts-style display-2">Healthcare facilities and Clinics</h4>
                                                 </div>
-                                                <div class="mbr-section-btn"><a class="btn btn-primary display-4" href="/projects">more details</a></div>
+                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-arrow-icon">→</span></a></div>
                                             </div>
                                             <div class="name-wrapper"><div class="name-wrap"></div></div>
                                         </div>
@@ -154,7 +182,7 @@
                     <div class="card col-12 col-lg-4">
                         <div class="card-wrapper">
                             <div class="iconfont-wrapper">
-                                <a href="/projects"><span class="mbr-iconfont icon54-v4-wooden-house"></span></a>
+                                <a href="/projects?filter=Residential"><span class="mbr-iconfont icon54-v4-wooden-house"></span></a>
                             </div>
                             <h5 class="card-title mbr-fonts-style align-center mb-0 display-4">Residential</h5>
                         </div>
@@ -162,7 +190,7 @@
                     <div class="card col-12 col-lg-4">
                         <div class="card-wrapper">
                             <div class="iconfont-wrapper">
-                                <a href="/projects"><span class="mbr-iconfont icon54-v4-building-construction"></span></a>
+                                <a href="/projects?filter=Commercial"><span class="mbr-iconfont icon54-v4-building-construction"></span></a>
                             </div>
                             <h5 class="card-title mbr-fonts-style align-center mb-0 display-4">Commercial</h5>
                         </div>
@@ -170,7 +198,7 @@
                     <div class="card col-12 col-lg-4">
                         <div class="card-wrapper">
                             <div class="iconfont-wrapper">
-                                <a href="/projects"><span class="mbr-iconfont imind-hospital"></span></a>
+                                <a href="/projects?filter=Healthcare"><span class="mbr-iconfont imind-hospital"></span></a>
                             </div>
                             <h5 class="card-title mbr-fonts-style align-center mb-0 display-4">Healthcare,&nbsp; Clinics</h5>
                         </div>
@@ -320,16 +348,6 @@
                 </div>
                 <div class="mbr-crt-title pt-3">
                     <h4 class="card-title py-2 mbr-fonts-style display-5">Design &amp; Execution</h4>
-                </div>
-            </div>
-            <div class="card p-3 align-center">
-                <div class="wrap">
-                    <div class="pie_progress progress4" role="progressbar" data-goal="60" data-pie='{"percent":60,"size":150,"colorCircle":"#f1f1f1","stroke":5,"colorSlice":"#7eb7bf","fontSize":"1.3rem","number":false}'>
-                        <p class="pie_progress__number mbr-fonts-style display-5">60%</p>
-                    </div>
-                </div>
-                <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">Execution</h4>
                 </div>
             </div>
         </div>
