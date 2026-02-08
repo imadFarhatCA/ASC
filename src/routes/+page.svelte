@@ -2,33 +2,58 @@
     .cta-arrow {
         display: inline-flex;
         align-items: center;
-        gap: 0.6rem;
+        gap: 0.75rem;
         color: #fff;
         text-decoration: none;
         font-weight: 600;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-size: 0.9rem;
-        padding: 0.85rem 2rem;
-        border: 2px solid rgba(255,255,255,0.8);
-        border-radius: 2px;
-        background: rgba(255,255,255,0.08);
-        backdrop-filter: blur(4px);
-        transition: background 0.3s ease, border-color 0.3s ease, gap 0.3s ease;
+        font-size: 0.88rem;
+        padding: 0.8rem 1.4rem 0.8rem 1.8rem;
+        border-radius: 6px;
+        background: #7eb7bf;
+        border: none;
+        transition: background 0.25s ease;
         margin-top: 0.5rem;
     }
     .cta-arrow:hover {
         color: #fff;
-        background: rgba(255,255,255,0.2);
-        border-color: #fff;
-        gap: 1rem;
+        background: #6aa8b0;
+        text-decoration: none;
     }
-    .cta-arrow-icon {
-        font-size: 1.1em;
+    .cta-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        background: #5a9aa3;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+    }
+    .cta-badge svg {
+        position: absolute;
         transition: transform 0.3s ease;
+        width: 14px;
+        height: 14px;
     }
-    .cta-arrow:hover .cta-arrow-icon {
-        transform: translateX(5px);
+    .cta-badge .arr1 {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    .cta-badge .arr2 {
+        transform: translate(calc(-50% - 20px), -50%);
+        left: 50%;
+        top: 50%;
+    }
+    .cta-arrow:hover .arr1 {
+        transform: translate(calc(-50% + 20px), -50%);
+    }
+    .cta-arrow:hover .arr2 {
+        transform: translate(-50%, -50%);
     }
 </style>
 
@@ -72,7 +97,7 @@
                                                 <div class="title-wrap">
                                                     <h4 class="item-title mbr-fonts-style display-2">Taking construction to the next level<br></h4>
                                                 </div>
-                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-arrow-icon">→</span></a></div>
+                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-badge"><svg class="arr1" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><svg class="arr2" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a></div>
                                             </div>
                                             <div class="name-wrapper"><div class="name-wrap"></div></div>
                                         </div>
@@ -89,7 +114,7 @@
                                                 <div class="title-wrap">
                                                     <h4 class="item-title mbr-fonts-style display-2">Setting your mind at ease by delivering top quality renovation works<br></h4>
                                                 </div>
-                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-arrow-icon">→</span></a></div>
+                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-badge"><svg class="arr1" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><svg class="arr2" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a></div>
                                             </div>
                                             <div class="name-wrapper"><div class="name-wrap"></div></div>
                                         </div>
@@ -106,7 +131,7 @@
                                                 <div class="title-wrap">
                                                     <h4 class="item-title mbr-fonts-style display-2">Healthcare facilities and Clinics</h4>
                                                 </div>
-                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-arrow-icon">→</span></a></div>
+                                                <div class="mbr-section-btn"><a class="cta-arrow display-4" href="/projects">View Projects <span class="cta-badge"><svg class="arr1" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><svg class="arr2" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a></div>
                                             </div>
                                             <div class="name-wrapper"><div class="name-wrap"></div></div>
                                         </div>
