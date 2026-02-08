@@ -37,7 +37,7 @@
                         </div>
                         <div id="collapse1_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
                             <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text display-4">We specialize in delivering construction and renovation solutions for health care facilities that prioritize safety, functionality, and compliance with the strictest industry standards. Whether it's building new clinics, renovating hospital wings, or modernizing medical offices, our team ensures minimal disruption to ongoing operations while meeting all regulatory requirements. From sterile environments to advanced infrastructure for medical technologies, we tailor every aspect to support patient care and staff efficiency.<br><br><a href="/projects" class="text-primary">Check the Projects &gt;</a></p>
+                                <p class="mbr-fonts-style mbr-text display-4">We specialize in delivering construction and renovation solutions for health care facilities that prioritize safety, functionality, and compliance with the strictest industry standards. Whether it's building new clinics, renovating hospital wings, or modernizing medical offices, our team ensures minimal disruption to ongoing operations while meeting all regulatory requirements. From sterile environments to advanced infrastructure for medical technologies, we tailor every aspect to support patient care and staff efficiency.<br><br><a href="/projects?filter=Healthcare" class="text-primary">Check the Projects &gt;</a></p>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                         </div>
                         <div id="collapse2_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
                             <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text display-4">Our commercial construction and renovation services are designed to elevate your business environment. We work closely with clients across various industries — from retail and office spaces to restaurants and showrooms — to create spaces that are both functional and visually striking. Whether it's a full-scale build, a structural upgrade, or an interior transformation, we deliver projects on time and on budget with minimal downtime to your operations. Your business space is a reflection of your brand, and we build it to impress.<br><br><a href="/projects" class="text-primary">Check the Projects &gt;</a><br></p>
+                                <p class="mbr-fonts-style mbr-text display-4">Our commercial construction and renovation services are designed to elevate your business environment. We work closely with clients across various industries — from retail and office spaces to restaurants and showrooms — to create spaces that are both functional and visually striking. Whether it's a full-scale build, a structural upgrade, or an interior transformation, we deliver projects on time and on budget with minimal downtime to your operations. Your business space is a reflection of your brand, and we build it to impress.<br><br><a href="/projects?filter=Commercial" class="text-primary">Check the Projects &gt;</a><br></p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div id="collapse3_13" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_13">
                             <div class="panel-body">
-                                <p class="mbr-fonts-style mbr-text display-4">From custom homes to full-scale renovations, we bring craftsmanship, creativity, and attention to detail to every residential project. Whether you're looking to build your dream home, remodel your kitchen, or add an extension, we collaborate closely with homeowners to bring their vision to life. We focus on quality materials, timeless design, and practical solutions that enhance your lifestyle and increase your property's value — all while ensuring a smooth and transparent process from start to finish.<br><br><a href="/projects" class="text-primary">Check the Projects &gt;</a><br></p>
+                                <p class="mbr-fonts-style mbr-text display-4">From custom homes to full-scale renovations, we bring craftsmanship, creativity, and attention to detail to every residential project. Whether you're looking to build your dream home, remodel your kitchen, or add an extension, we collaborate closely with homeowners to bring their vision to life. We focus on quality materials, timeless design, and practical solutions that enhance your lifestyle and increase your property's value — all while ensuring a smooth and transparent process from start to finish.<br><br><a href="/projects?filter=Residential" class="text-primary">Check the Projects &gt;</a><br></p>
                             </div>
                         </div>
                     </div>
