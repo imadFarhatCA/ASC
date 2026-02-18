@@ -12,7 +12,7 @@
             <div class="col-12"></div>
         </div>
         <div class="map-wrap">
-            <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.655%2C45.468%2C-73.635%2C45.479&layer=mapnik&marker=45.4731%2C-73.6443" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.6737%2C45.4745%2C-73.6637%2C45.4806&layer=mapnik&marker=45.4776%2C-73.6687" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
     </div>
 </section>
@@ -131,8 +131,9 @@
                     <p class="card-text align-left mbr-fonts-style pb-5 display-7">info@artspecialized.com</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Address</h3>
                     <p class="card-text align-left mbr-fonts-style display-7">Art Specialized Constructions inc.<br>92-5889 av. Centennial<br>Côte-Saint-Luc, Québec H4W 1T2, Canada</p>
+                    <p class="card-text align-left mbr-fonts-style mt-3 display-7">Orient Tower office 6<br>Salem Moubarak street,<br>Block 7,<br>Salmiya, Hawally, Kuwait</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 mt-4 display-7">Phone Number</h3>
-                    <p class="card-text align-left mbr-fonts-style pb-5 display-7">+1 (514) 416 7330</p>
+                    <p class="card-text align-left mbr-fonts-style pb-5 display-7">+1 (514) 416 7330<br>+965 6704 7215</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Social Media Channels</h3>
                     <div class="icons-wrapper">
                         <div class="icon-wrapper">
