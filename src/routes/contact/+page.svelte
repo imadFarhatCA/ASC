@@ -129,9 +129,10 @@
                 <div class="card-wrapper">
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">E-Mail</h3>
                     <p class="card-text align-left mbr-fonts-style pb-5 display-7">info@artspecialized.com</p>
-                    <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Address</h3>
+                    <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Address Canada</h3>
                     <p class="card-text align-left mbr-fonts-style display-7">Art Specialized Constructions inc.<br>92-5889 av. Centennial<br>Côte-Saint-Luc, Québec H4W 1T2, Canada</p>
-                    <p class="card-text align-left mbr-fonts-style mt-3 display-7">Orient Tower office 6<br>Salem Moubarak street,<br>Block 7,<br>Salmiya, Hawally, Kuwait</p>
+                    <h3 class="card-title align-left mbr-fonts-style mb-3 mt-4 display-7">Address Kuwait</h3>
+                    <p class="card-text align-left mbr-fonts-style display-7">Orient Tower office 6<br>Salem Moubarak street,<br>Block 7,<br>Salmiya, Hawally, Kuwait</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 mt-4 display-7">Phone Number</h3>
                     <p class="card-text align-left mbr-fonts-style pb-5 display-7">+1 (514) 416 7330<br>+965 6704 7215</p>
                     <h3 class="card-title align-left mbr-fonts-style mb-3 display-7">Social Media Channels</h3>
