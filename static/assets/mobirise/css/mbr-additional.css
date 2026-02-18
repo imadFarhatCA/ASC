@@ -11650,3 +11650,15 @@ a {
 .cid-v5ySKbP37K .mbr-section-btn-main {
   text-align: center;
 }
+
+/* Generic fix: features9 section - 1/2/3 cards display side by side */
+.features9 .lists-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .features9 .lists-container {
+    flex-wrap: wrap;
+  }
+}
