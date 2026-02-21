@@ -27,12 +27,9 @@
     border-radius: 13px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    left: 3px;
+    left: 50%;
     top: 3px;
     z-index: 0;
-}
-.lang-toggle[data-active='FR']::before {
-    left: 50%;
 }
 .lang-option {
     display: inline-block;
@@ -78,29 +75,26 @@
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="/">
+                    <a href="/fr">
                         <img src="/assets/images/artspecialized-icon.png-96x127.png" alt="Art Specialized Construction" style="height: 4.1rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-5" href="/">Art Specialized Construction</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-5" href="/fr">Art Specialized Construction</a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span><span></span>
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/company">the Company</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/projects">the Projects</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/contact">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/fr/company">la Société</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/fr/projects">les Projets</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/fr/contact">Nous contacter</a></li>
                     <li class="nav-item lang-toggle-item">
-                        <div class="lang-toggle" data-active="EN">
-                            <a href="/" class="lang-option active" aria-label="English">EN</a>
-                            <a href="/fr" class="lang-option" aria-label="Français">FR</a>
+                        <div class="lang-toggle" data-active="FR">
+                            <a href="/" class="lang-option" aria-label="English">EN</a>
+                            <a href="/fr" class="lang-option active" aria-label="Français">FR</a>
                         </div>
                     </li>
                 </ul>
