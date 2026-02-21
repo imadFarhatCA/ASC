@@ -31,9 +31,7 @@
     top: 3px;
     z-index: 0;
 }
-.lang-toggle[data-active='FR']::before {
-    left: 50%;
-}
+
 .lang-option {
     display: inline-block;
     color: #636363;
