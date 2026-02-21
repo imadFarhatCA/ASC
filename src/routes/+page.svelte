@@ -336,6 +336,46 @@
                     </div>
                 </div>
             </div>
+            <div class="card col-12 col-md-4 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div class="iconfont-wrapper">
+                            <span class="mbr-iconfont icon54-v1-air-conditioner"></span>
+                        </div>
+                        <h5 class="card-title mbr-fonts-style display-4">HVAC</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div class="iconfont-wrapper">
+                            <span class="mbr-iconfont icon54-v1-fire-alarm"></span>
+                        </div>
+                        <h5 class="card-title mbr-fonts-style display-4">Fire Alarm</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div class="iconfont-wrapper">
+                            <span class="mbr-iconfont icon54-v1-fire-extinguisher"></span>
+                        </div>
+                        <h5 class="card-title mbr-fonts-style display-4">Fire Fighting</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12 col-md-4 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <div class="iconfont-wrapper">
+                            <span class="mbr-iconfont icon54-v1-gas-container"></span>
+                        </div>
+                        <h5 class="card-title mbr-fonts-style display-4">Medical Gas</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
