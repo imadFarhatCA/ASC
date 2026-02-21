@@ -1,4 +1,4 @@
-import { projects } from '$lib/projects.fr.js';
+import { projectsFr as projects } from '$lib/projects.fr.js';
 import { error } from '@sveltejs/kit';
 
 export const prerender = true;
