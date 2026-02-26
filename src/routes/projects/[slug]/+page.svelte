@@ -1,86 +1,94 @@
 <script>
 	let { data } = $props();
 	const { project } = data;
-	const { slug } = project;
-	const modalId = `${slug}-modal`;
-	const lightboxId = `lb-${slug}`;
+	const modalId = `${project.slug}-modal`;
+	const lightboxId = `lb-${project.slug}`;
 </script>
 
 <svelte:head>
-	<title>{project.meta.title}</title>
+	<title>{project.title} | Art Specialized Construction</title>
 </svelte:head>
 
-<section data-bs-version="5.1" class="buildm5 header1 mbr-fullscreen" id="header1-{slug}" style="background-image: url('{project.header.heroImage}');">
+<section data-bs-version="5.1" class="buildm5 header1 mbr-fullscreen" id="header1-{project.slug}"
+	style="background-image: url('{project.heroImage}');">
 	<div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);"></div>
 	<div class="container">
 		<div class="row">
 			<div class="content-wrap col-12 col-md-12">
-				<h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-4 display-7">{project.header.subtitle}</h2>
+				{#if project.heroSubtitle}
+					<h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-4 display-7">{project.heroSubtitle}</h2>
+				{/if}
 				<div class="col-12"><div class="line"></div></div>
-				<h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">{project.header.title}</h1>
+				<h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">{project.title}</h1>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section data-bs-version="5.1" class="features9 {project.features.cid}" id="afeatures9-{slug}">
+<section data-bs-version="5.1" class="features9 cid-features-{project.slug}" id="features-{project.slug}">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-text">
 				<div class="lists-container">
+					{#if project.scopeOfWork}
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
 							<div class="card-box">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>1.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SCOPE OF WORK</h4>
-									<p class="card-text mbr-fonts-style display-7">{project.features.scopeOfWork}</p>
+									<p class="card-text mbr-fonts-style display-7">{project.scopeOfWork}</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					{/if}
+					{#if project.sector}
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
 							<div class="card-box">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>2.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SECTOR</h4>
-									<p class="card-text mbr-fonts-style display-7">{project.features.sector}</p>
+									<p class="card-text mbr-fonts-style display-7">{project.sector}</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					{/if}
+					{#if project.projectSize}
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
 							<div class="card-box">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>3.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">PROJECT SIZE</h4>
-									<p class="card-text mbr-fonts-style display-7">{project.features.projectSize}</p>
+									<p class="card-text mbr-fonts-style display-7">{project.projectSize}</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					{/if}
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-{#if project.content}
-<section data-bs-version="5.1" class="content2 {project.content.cid}" id="content02-{slug}">
+{#if project.paragraphs?.length || project.blockquote || project.trailing?.length}
+<section data-bs-version="5.1" class="content2 cid-content-{project.slug}" id="content-{project.slug}">
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-9">
-				{#each project.content.paragraphs as p}
+				{#each project.paragraphs ?? [] as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}
-				{#if project.content.blockquote}
+				{#if project.blockquote}
 					<blockquote>
-						<p class="quote mbr-fonts-style display-4">{project.content.blockquote}</p>
+						<p class="quote mbr-fonts-style display-4">{project.blockquote}</p>
 					</blockquote>
 				{/if}
-				{#each project.content.trailing as p}
+				{#each project.trailing ?? [] as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}
 			</div>
@@ -89,13 +97,14 @@
 </section>
 {/if}
 
-<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5 {project.gallery.cid}" id="agallery3-{slug}">
+{#if project.images?.length}
+<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5 cid-gallery-{project.slug}" id="gallery-{project.slug}">
 	<div class="container">
 		<div class="row mbr-gallery items-row justify-content-center">
-			{#each project.gallery.images as img, i}
+			{#each project.images as img, i}
 			<div class="col-12 col-md-6 col-lg-4 item gallery-image">
 				<div class="item-wrapper" data-bs-toggle="modal" data-bs-target="#{modalId}">
-					<img class="w-100" src="/assets/images/{img}" alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
+					<img class="w-100" src={img} alt={project.title} data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
 					<div class="img-overlay"></div>
 					<div class="icon-wrapper"><span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span></div>
 				</div>
@@ -108,9 +117,9 @@
 					<div class="modal-body">
 						<div class="carousel slide" id="{lightboxId}" data-bs-interval="5000">
 							<div class="carousel-inner">
-								{#each project.gallery.images as img, i}
+								{#each project.images as img, i}
 								<div class="carousel-item {i === 0 ? 'active' : ''}">
-									<img class="d-block w-100" src="/assets/images/{img}" alt="">
+									<img class="d-block w-100" src={img} alt="">
 								</div>
 								{/each}
 							</div>
@@ -128,3 +137,4 @@
 		</div>
 	</div>
 </section>
+{/if}
