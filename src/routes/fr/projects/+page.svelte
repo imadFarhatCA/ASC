@@ -105,8 +105,8 @@ onMount(() => {
                 <ul>
                     <li class="mbr-gallery-filter-all active"><a class="btn btn-md btn-primary-outline display-7" href="#">Tous</a></li>
                     <li><a class="btn btn-md btn-primary-outline display-7" href="#">Commercial</a></li>
-                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Healthcare</a></li>
-                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Residential</a></li>
+                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Santé</a></li>
+                    <li><a class="btn btn-md btn-primary-outline display-7" href="#">Résidentiel</a></li>
                 </ul>
             </div>
             <div class="mbr-gallery-row">
@@ -133,21 +133,21 @@ onMount(() => {
                                 <span class="mbr-gallery-title mbr-fonts-style display-7">Art Specialized Construction</span>
                             </div>
                         </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Healthcare">
+                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Santé">
                             <div>
                                 <img src="/assets/images/asc-website-projects-taiba-001.jpg-1920x1280-800x533.jpg" alt="LINK:/fr/projects/taiba-hospital" title="">
                                 <span class="icon-focus"></span>
                                 <span class="mbr-gallery-title mbr-fonts-style display-7"><strong>HÔPITAL TAIBA</strong></span>
                             </div>
                         </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Healthcare">
+                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Santé">
                             <div>
                                 <img src="/assets/images/asc-testing-laboratory-012-1920x1280-800x533.jpg" alt="LINK:/fr/projects/testing-laboratory" title="">
                                 <span class="icon-focus"></span>
                                 <span class="mbr-gallery-title mbr-fonts-style display-7">Laboratoire I AM Negative</span>
                             </div>
                         </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Residential">
+                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Résidentiel">
                             <div>
                                 <img src="/assets/images/img-20250626-wa0020-1-1600x900-768x512.jpeg" alt="LINK:/fr/projects/al-wafrah" title="">
                                 <span class="icon-focus"></span>

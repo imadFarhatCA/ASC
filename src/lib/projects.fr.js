@@ -5,24 +5,23 @@ export const projectsFr = {
 		header: {
 			heroImage: '/assets/images/asc-chocoville-001-1920x1280.jpg',
 			subtitle: 'Vevey Sweets Co.',
-			title: 'Aménagement Chocoville'
+			title: 'Design Chocoville'
 		},
 		features: {
 			cid: 'cid-v1v8Xy09F9',
-			scopeOfWork: 'Exécution complète des travaux de construction',
+			scopeOfWork: 'Design & Exécution complète (Coentreprise avec Antar Architects & Build)',
 			sector: 'Commerce de détail',
 			projectSize: '-'
 		},
 		content: {
 			cid: 'cid-v1v8XydUlR',
 			paragraphs: [
-				'Nous avons commencé la rénovation de l\'hôpital Taiba à Sabah Al Salem, Koweït, en mai 2016 jusqu\'en décembre 2018. Notre intervention en construction comprenait ce qui suit :'
+				'Nous avons assuré la conception et l\'exécution complète de Chocoville au Koweït, couvrant la planification des espaces, le développement du design intérieur, la création de mobilier sur mesure et l\'ensemble des travaux d\'aménagement.'
 			],
 			blockquote:
-				'Démolition des planchers existants, des murs en blocs et des plâtres, imperméabilisation des zones humides, travaux de gypse pour les plafonds et cloisons, plafonds acoustiques, revêtements acoustiques des murs et plafonds dans certaines salles de traitement ORL, panneaux de verre fixes, portes coulissantes en verre, pose de tous types de carrelage et de revêtements de sol, peinture antibactérienne pour l\'intérieur et peinture Sigma pour l\'extérieur, portes en bois, plafonds et revêtements muraux en bois, armoires, plans de travail Corian Dupont, plafonds tendus, protection PLOMB pour les salles de radiologie, plinthes et supports à fleurs en acier inoxydable, pose d\'art wood et de signalétique, pose de revêtement de sol en linoléum, tous types de travaux de plomberie, rideaux (cubicule & store), plans d\'exécution et plans de recollement.',
+				'Notre périmètre d\'intervention comprenait les travaux de démolition et de préparation, les plafonds et cloisons en gypse, les revêtements de sol et muraux, les installations vitrées, la peinture, la menuiserie sur mesure, les plans de travail en Corian, la signalétique, ainsi que les travaux de plomberie et d\'électricité.',
 			trailing: [
-				'Nous avons géré et supervisé les sous-traitants suivants : béton, électricité, lutte contre l\'incendie et alarme incendie, CVC, façade rideau et revêtement alucobond, portes standard et coupe-feu, ascenseurs, menuiserie, gaz médicaux, système d\'appel infirmière, CCTV et informatique.',
-				'Les travaux ci-dessus ont été exécutés en plusieurs phases, les étages rénovés étant dans un hôpital en activité ; nous avons effectué les travaux avec une haute sécurité et chaque étape était surveillée par le département de contrôle des infections.'
+				'Nous avons coordonné et supervisé l\'ensemble des sous-traitants spécialisés afin de garantir une exécution de haute qualité, le respect des normes de sécurité et la livraison dans les délais.'
 			]
 		},
 		gallery: {
@@ -106,7 +105,7 @@ export const projectsFr = {
 				'Une rénovation résidentielle complète réalisée avec un souci du détail, de la qualité et des standards modernes de vie.'
 			],
 			blockquote:
-				'Le projet de la Maison d\'Été Al Wafrah a porté sur la rénovation intégrale d\'une propriété résidentielle, couvrant tous les périmètres intérieurs et extérieurs. Chaque élément a été soigneusement exécuté pour répondre aux normes résidentielles élevées tout en préservant le caractère et le confort de l\'espace.',
+				'Le projet de la Maison d\'Été Al Wafrah a porté sur la rénovation intégrale d\'une propriété résidentielle, couvrant tous les espaces intérieurs et extérieurs. Chaque élément a été soigneusement exécuté pour répondre aux normes résidentielles élevées tout en préservant le caractère et le confort de l\'espace.',
 			trailing: [
 				'Rénovation résidentielle complète · Périmètre intérieur et extérieur intégral · Finitions de haute qualité dans l\'ensemble · Exécution soignée selon les normes résidentielles modernes'
 			]

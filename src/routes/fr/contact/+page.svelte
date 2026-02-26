@@ -151,7 +151,7 @@
                     <div class="link-wrapper mt-4">
                         <span class="mbr-iconfont mobi-mbri-down mobi-mbri"></span>
                         <div class="link-text-box">
-                            <p class="link-text pt-2 mbr-fonts-style display-4">que vous préfériez les appels téléphoniques, les courriels ou les réseaux sociaux, nous sommes toujours disponibles pour répondre à toutes vos demandes</p>
+                            <p class="link-text pt-2 mbr-fonts-style display-4">Que vous préfériez les appels téléphoniques, les courriels ou les réseaux sociaux, nous sommes toujours disponibles pour répondre à toutes vos demandes</p>
                         </div>
                     </div>
                 </div>

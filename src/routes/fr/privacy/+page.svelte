@@ -15,7 +15,7 @@
                         <p class="mbr-text mbr-fonts-style display-7">
                             <strong>Dernière mise à jour : janvier 2025</strong><br><br>
 
-                            Art Specialized Construction Inc. (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons les informations lorsque vous visitez notre site web ou nous contactez via notre formulaire de contact.<br><br>
+                            Art Specialized Construction Inc. (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons les informations lorsque vous visitez notre site web ou vous nous contactez via notre formulaire de contact.<br><br>
 
                             <strong>1. Informations que nous collectons</strong><br>
                             Nous pouvons collecter les informations personnelles suivantes lorsque vous soumettez volontairement notre formulaire de contact :<br>
@@ -26,7 +26,7 @@
                             Nous n'utilisons pas de témoins (cookies) à des fins de suivi, et nous ne collectons aucune information personnelle automatiquement au-delà des journaux de serveur standard (adresse IP, type de navigateur, page de référence) à des fins de sécurité et d'analyse.<br><br>
 
                             <strong>2. Comment nous utilisons vos informations</strong><br>
-                            Les informations soumises via notre formulaire de contact sont utilisées uniquement pour répondre à votre demande ou fournir des informations sur nos services. Nous ne vendons, ne louons ni ne partageons vos informations personnelles avec des tiers à des fins commerciales.<br><br>
+                            Les informations soumises via notre formulaire de contact sont utilisées uniquement pour répondre à votre demande ou pour vous fournir des informations sur nos services. Nous ne vendons, ne louons ni ne partageons vos informations personnelles avec des tiers à des fins commerciales.<br><br>
 
                             <strong>3. Soumissions via le formulaire de contact</strong><br>
                             Les messages envoyés via notre formulaire de contact sont traités par FormSubmit, un service tiers de gestion de formulaires. En soumettant le formulaire, vous reconnaissez que vos données seront transmises via leur service. Nous vous encourageons à consulter la politique de confidentialité de FormSubmit pour plus de détails sur la façon dont ils traitent les données.<br><br>
@@ -42,10 +42,10 @@
 
                             <strong>7. Vos droits</strong><br>
                             En vertu des lois canadiennes sur la protection de la vie privée applicables (LPRPDE et Loi 25 du Québec), vous avez le droit :<br>
-                            • D'accéder aux informations personnelles que nous détenons à votre sujet<br>
-                            • De demander la correction d'informations inexactes<br>
-                            • De demander la suppression de vos informations personnelles<br>
-                            • De retirer votre consentement à l'utilisation de vos données<br><br>
+                            • D'accéder aux informations personnelles que nous détenons à votre sujet;<br>
+                            • De demander la correction d'informations inexactes;<br>
+                            • De demander la suppression de vos informations personnelles;<br>
+                            • De retirer votre consentement à l'utilisation de vos données.<br><br>
                             Pour exercer l'un de ces droits, veuillez nous contacter aux coordonnées ci-dessous.<br><br>
 
                             <strong>8. Modifications de cette politique</strong><br>

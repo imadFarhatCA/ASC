@@ -163,7 +163,7 @@
                             <strong>Pourquoi Art Specialized Construction</strong>
                         </p>
                     </div>
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">Au cœur de chaque projet se trouve une promesse :<br>livrer qualité, intégrité et savoir-faire qui résistent à l'épreuve du temps.&nbsp;</h2>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Au cœur de chaque projet se trouve une promesse :<br>Offrir qualité, intégrité et savoir-faire qui résistent à l'épreuve du temps.&nbsp;</h2>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@
                     <div class="card col-12 col-lg-4">
                         <div class="card-wrapper">
                             <div class="iconfont-wrapper">
-                                <a href="/fr/projects?filter=Residential"><span class="mbr-iconfont icon54-v4-wooden-house"></span></a>
+                                <a href="/fr/projects?filter=Résidentiel"><span class="mbr-iconfont icon54-v4-wooden-house"></span></a>
                             </div>
                             <h5 class="card-title mbr-fonts-style align-center mb-0 display-4">Résidentiel</h5>
                         </div>
@@ -238,7 +238,7 @@
                     <div class="card col-12 col-lg-4">
                         <div class="card-wrapper">
                             <div class="iconfont-wrapper">
-                                <a href="/fr/projects?filter=Healthcare"><span class="mbr-iconfont imind-hospital"></span></a>
+                                <a href="/fr/projects?filter=Santé"><span class="mbr-iconfont imind-hospital"></span></a>
                             </div>
                             <h5 class="card-title mbr-fonts-style align-center mb-0 display-4">Santé,&nbsp; Cliniques</h5>
                         </div>
