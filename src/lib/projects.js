@@ -5,24 +5,23 @@ export const projects = {
 		header: {
 			heroImage: '/assets/images/asc-chocoville-001-1920x1280.jpg',
 			subtitle: 'Vevey Sweets Co.',
-			title: 'Chocoville Fit out'
+			title: 'Chocoville Design'
 		},
 		features: {
 			cid: 'cid-v1v8Xy09F9',
-			scopeOfWork: 'Full Construction Execution',
+			scopeOfWork: 'Full Design & Execution (Joint Venture with Antar Architects & Build)',
 			sector: 'Retail',
 			projectSize: '-'
 		},
 		content: {
 			cid: 'cid-v1v8XydUlR',
 			paragraphs: [
-				'We started the Renovation of Taiba hospital, Sabah Al Salem, Kuwait in May 2016 till December 2018, our construction part was as follow:'
+				'We delivered the complete design and execution of Chocoville in Kuwait, covering space planning, interior design development, custom-made furniture creation, and all fit-out works.'
 			],
 			blockquote:
-				'Demolition of the existing floors, block walls and plasters, waterproofing for the wet areas, Gypsum works for the ceilings & partitions, acoustical ceilings, acoustical flooring walls & ceiling in some of the ENT treatment rooms, fixed panel glass, sliding glass door, glass door, fixing of all types of tiles cladding and flooring, antibacterial paint for the interior and Sigma paint for the exterior, wooden doors, wooden ceiling and wall cladding, cabinets, corean Dupont tops, stretch ceiling, LEAD for the Xrays rooms, stainless steel skirting and flower stand, fixing of art wood and signage, fixing of the linoleum flooring, all types of plumbing works, Curtain (cubicle & Blind), shop drawings and as built drawings.',
+				'Our scope of work included demolition and preparation works, gypsum ceilings and partitions, floor and wall finishes, glass installations, painting, bespoke joinery, Corian countertops, signage, as well as plumbing and electrical works.',
 			trailing: [
-				'We managed and supervised the following contractors: concrete, electrical, firefighting & fire alarm, HVAC, curtain wall & alucobond cladding, normal doors and fire rated doors, elevators, woodwork, medical gases, nurse call system, CCTV, and IT.',
-				'The above works were executed into many phases, as the renovated floors were in a running hospital, we were executing the work with high safety and every step was monitored by the infection control department.'
+				'We coordinated and supervised all specialized subcontractors to ensure high-quality execution, compliance with safety standards, and on-time delivery.'
 			]
 		},
 		gallery: {
