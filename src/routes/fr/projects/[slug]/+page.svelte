@@ -95,7 +95,7 @@
 			{#each project.gallery.images as img, i}
 			<div class="col-12 col-md-6 col-lg-4 item gallery-image">
 				<div class="item-wrapper" data-bs-toggle="modal" data-bs-target="#{modalId}">
-					<img class="w-100" src="/assets/images/{img}" alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
+					<img class="w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
 					<div class="img-overlay"></div>
 					<div class="icon-wrapper"><span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span></div>
 				</div>
@@ -110,7 +110,7 @@
 							<div class="carousel-inner">
 								{#each project.gallery.images as img, i}
 								<div class="carousel-item {i === 0 ? 'active' : ''}">
-									<img class="d-block w-100" src="/assets/images/{img}" alt="">
+									<img class="d-block w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="">
 								</div>
 								{/each}
 							</div>

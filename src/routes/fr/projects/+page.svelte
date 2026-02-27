@@ -1,6 +1,8 @@
 <script>
 import { onMount } from 'svelte';
 
+let { data } = $props();
+
 onMount(() => {
     const block = document.querySelector("section.gallery1");
     if (!block) return;
@@ -112,48 +114,15 @@ onMount(() => {
             <div class="mbr-gallery-row">
                 <div class="mbr-gallery-layout-default">
                     <div><div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Commercial">
+                        {#each data.projects as project}
+                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="{project.categoryFr}">
                             <div>
-                                <img src="/assets/images/asc-chocoville-001-1920x1280-800x533.jpg" alt="LINK:/fr/projects/chocoville" title="">
+                                <img src={project.heroImage ?? project.images?.[0] ?? ''} alt="LINK:/fr/projects/{project.slug}" title="">
                                 <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Boutique Chocoville</span>
+                                <span class="mbr-gallery-title mbr-fonts-style display-7">{project.title}</span>
                             </div>
                         </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Commercial">
-                            <div>
-                                <img src="/assets/images/asc-olena-001-1920x1280-800x533.jpg" alt="LINK:/fr/projects/oleana-playhouse" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">La Salle de Jeux Oleana</span>
-                            </div>
-                        </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Commercial">
-                            <div>
-                                <img src="/assets/images/asc-promedic-main-office-001-1920x1280-800x533.jpg" alt="LINK:/fr/projects/promedic" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Art Specialized Construction</span>
-                            </div>
-                        </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Santé">
-                            <div>
-                                <img src="/assets/images/asc-website-projects-taiba-001.jpg-1920x1280-800x533.jpg" alt="LINK:/fr/projects/taiba-hospital" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7"><strong>HÔPITAL TAIBA</strong></span>
-                            </div>
-                        </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Santé">
-                            <div>
-                                <img src="/assets/images/asc-testing-laboratory-012-1920x1280-800x533.jpg" alt="LINK:/fr/projects/testing-laboratory" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Laboratoire I AM Negative</span>
-                            </div>
-                        </div>
-                        <div class="mbr-gallery-item mbr-gallery-item--p4" data-video-url="false" data-tags="Résidentiel">
-                            <div>
-                                <img src="/assets/images/img-20250626-wa0020-1-1600x900-768x512.jpeg" alt="LINK:/fr/projects/al-wafrah" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Maison d'été Al Wafrah</span>
-                            </div>
-                        </div>
+                        {/each}
                     </div></div>
                     <div class="clearfix"></div>
                 </div>
