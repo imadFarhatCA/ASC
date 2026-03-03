@@ -10,12 +10,7 @@
 </script>
 
 <svelte:head>
-	<script
-		src="https://website-control-panel.pages.dev/tracker.js"
-		data-key="wcp_cffcc6f7ea36df1ca3506479132dc4ce432bc6f2"
-		data-endpoint="https://website-control-panel.pages.dev/api/track"
-		defer
-	></script>
+	<script src="https://website-control-panel.pages.dev/tracker.js"></script>
 </svelte:head>
 
 {#if isFr}
