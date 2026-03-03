@@ -4,14 +4,13 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import FooterFr from '$lib/components/FooterFr.svelte';
 	import { page } from '$app/stores';
+	import WebsiteTracker from '$lib/components/WebsiteTracker.svelte';
 
 	let { children } = $props();
 	let isFr = $derived($page.url.pathname.startsWith('/fr'));
 </script>
 
-<svelte:head>
-	<script src="https://website-control-panel.pages.dev/tracker.js"></script>
-</svelte:head>
+<WebsiteTracker />
 
 {#if isFr}
 	<NavFr />
