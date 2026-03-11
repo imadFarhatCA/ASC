@@ -9,7 +9,7 @@ export const projectsFr = {
 		},
 		features: {
 			cid: 'cid-v1v8Xy09F9',
-			scopeOfWork: 'Design & Exécution complète (Coentreprise avec Antar Architects & Build)',
+			scopeOfWork: 'Design & Exécution complète (Coentreprise avec Antar Architects)',
 			sector: 'Commerce de détail',
 			projectSize: '45 mètres carrés'
 		},

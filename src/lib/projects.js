@@ -9,7 +9,7 @@ export const projects = {
 		},
 		features: {
 			cid: 'cid-v1v8Xy09F9',
-			scopeOfWork: 'Full Design & Execution (Joint Venture with Antar Architects & Build)',
+			scopeOfWork: 'Full Design & Execution (Joint Venture with Antar Architects)',
 			sector: 'Retail',
 			projectSize: '45 Square Meters'
 		},
