@@ -50,8 +50,11 @@ export const projectsFr = {
 		features: {
 			cid: 'cid-uSDoFksFrt',
 			scopeOfWork: 'Rénovation complète de tous les étages de deux bâtiments hospitaliers connectés',
-			sector: 'Santé',
-			projectSize: '15 600 mètres carrés'
+			sector: 'Rénovation accélérée',
+			projectSize: '15 600 mètres carrés',
+			location: 'Kuwait City, Koweït',
+			status: 'Réalisé 2015 – 2020',
+			client: 'Hôpital Taiba'
 		},
 		content: {
 			cid: 'cid-uShN3QDXrZ',

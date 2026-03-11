@@ -72,6 +72,13 @@
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-9">
+				{#if project.features?.location || project.features?.status || project.features?.client}
+				<div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+					{#if project.features.location}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Lieu :</span> <span class="mbr-fonts-style display-4">{project.features.location}</span></div>{/if}
+					{#if project.features.status}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Statut :</span> <span class="mbr-fonts-style display-4">{project.features.status}</span></div>{/if}
+					{#if project.features.client}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Client :</span> <span class="mbr-fonts-style display-4">{project.features.client}</span></div>{/if}
+				</div>
+				{/if}
 				{#each project.content.paragraphs as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}

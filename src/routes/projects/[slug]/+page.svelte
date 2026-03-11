@@ -80,6 +80,13 @@
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-9">
+				{#if project.location || project.status || project.client}
+				<div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem;">
+					{#if project.location}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Location:</span> <span class="mbr-fonts-style display-4">{project.location}</span></div>{/if}
+					{#if project.status}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Status:</span> <span class="mbr-fonts-style display-4">{project.status}</span></div>{/if}
+					{#if project.client}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Client:</span> <span class="mbr-fonts-style display-4">{project.client}</span></div>{/if}
+				</div>
+				{/if}
 				{#each project.paragraphs ?? [] as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}

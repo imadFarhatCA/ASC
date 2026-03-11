@@ -50,8 +50,11 @@ export const projects = {
 		features: {
 			cid: 'cid-uSDoFksFrt',
 			scopeOfWork: 'Full renovation of all floors in two connected hospital buildings',
-			sector: 'Health Care',
-			projectSize: '15,600 Square Meters'
+			sector: 'Fast-track renovation',
+			projectSize: '15,600 Square Meters',
+			location: 'Kuwait City, Kuwait',
+			status: 'Executed 2015 – 2020',
+			client: 'Taiba Hospital'
 		},
 		content: {
 			cid: 'cid-uShN3QDXrZ',
