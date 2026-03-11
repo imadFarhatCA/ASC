@@ -164,7 +164,7 @@
                             <strong>Why Art Specialized Construction</strong>
                         </p>
                     </div>
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">At the heart of every project is a promise<br>to deliver quality, integrity, and craftsmanship that stand the test of time.&nbsp;</h2>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">At the heart of every project is a promise to deliver quality, integrity, and craftsmanship that stand the test of time.&nbsp;</h2>
                 </div>
             </div>
         </div>
