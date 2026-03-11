@@ -124,7 +124,8 @@ export const projectsFr = {
 				't3-1-816x469.jpg',
 				'img-20250626-wa0031-816x612.jpg',
 				'img-20250626-wa0035-816x458.jpg',
-				'img-20250626-wa0038-816x458.jpg'
+				'img-20250626-wa0038-816x458.jpg',
+				'PHOTO-2026-03-11-15-48-13.jpg'
 			]
 		}
 	},
