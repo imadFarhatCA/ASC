@@ -128,7 +128,9 @@ export const projects = {
 				'PHOTO-2026-03-11-15-48-13.jpg',
 				'IMG_9853.jpg',
 				'IMG_5708.jpg',
-				'IMG_5942.jpg'
+				'IMG_5942.jpg',
+				'IMG_3033.jpg',
+				'IMG_3554.jpg'
 			]
 		}
 	},
