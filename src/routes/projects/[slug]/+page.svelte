@@ -105,13 +105,13 @@
 </section>
 {/if}
 
-<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5" id="agallery3-{slug}">
+<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5 cid-v1v0rVXjbQ" id="agallery3-{slug}">
 	<div class="container">
 		<div class="row mbr-gallery items-row justify-content-center" style="row-gap: 32px;">
 			{#each project.gallery.images as img, i}
 			<div class="col-12 col-md-6 col-lg-4 item gallery-image">
 				<div class="item-wrapper" data-bs-toggle="modal" data-bs-target="#{modalId}">
-					<img class="w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}" style="aspect-ratio: 4/3; object-fit: cover;">
+					<img class="w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
 					<div class="img-overlay"></div>
 					<div class="icon-wrapper"><span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span></div>
 				</div>
