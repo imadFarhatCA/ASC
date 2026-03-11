@@ -126,7 +126,9 @@ export const projectsFr = {
 				'img-20250626-wa0035-816x458.jpg',
 				'img-20250626-wa0038-816x458.jpg',
 				'PHOTO-2026-03-11-15-48-13.jpg',
-				'IMG_9853.jpg'
+				'IMG_9853.jpg',
+				'IMG_5708.jpg',
+				'IMG_5942.jpg'
 			]
 		}
 	},
