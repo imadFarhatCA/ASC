@@ -23,14 +23,14 @@
 	</div>
 </section>
 
-<section data-bs-version="5.1" class="features9 {project.features.cid}" id="afeatures9-{slug}">
+<section data-bs-version="5.1" class="features9 {project.features.cid}" id="afeatures9-{slug}" style="padding-top: 5rem;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-text">
 				<div class="lists-container">
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
-							<div class="card-box">
+							<div class="card-box" style="text-align: center;">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>1.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">ÉTENDUE DES TRAVAUX</h4>
@@ -41,7 +41,7 @@
 					</div>
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
-							<div class="card-box">
+							<div class="card-box" style="text-align: center;">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>2.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SECTEUR</h4>
@@ -52,7 +52,7 @@
 					</div>
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
-							<div class="card-box">
+							<div class="card-box" style="text-align: center;">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>3.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">TAILLE DU PROJET</h4>
@@ -67,18 +67,27 @@
 	</div>
 </section>
 
+{#if project.features?.location || project.features?.status || project.features?.client}
+<section style="padding: 4rem 0 0;">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-9">
+				<div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+					{#if project.features.location}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Lieu :</span> <span class="mbr-fonts-style display-4">{project.features.location}</span></div>{/if}
+					{#if project.features.status}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Statut :</span> <span class="mbr-fonts-style display-4">{project.features.status}</span></div>{/if}
+					{#if project.features.client}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Client :</span> <span class="mbr-fonts-style display-4">{project.features.client}</span></div>{/if}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{/if}
+
 {#if project.content}
 <section data-bs-version="5.1" class="content2 {project.content.cid}" id="content02-{slug}">
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-9">
-				{#if project.features?.location || project.features?.status || project.features?.client}
-				<div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem;">
-					{#if project.features.location}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Lieu :</span> <span class="mbr-fonts-style display-4">{project.features.location}</span></div>{/if}
-					{#if project.features.status}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Statut :</span> <span class="mbr-fonts-style display-4">{project.features.status}</span></div>{/if}
-					{#if project.features.client}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Client :</span> <span class="mbr-fonts-style display-4">{project.features.client}</span></div>{/if}
-				</div>
-				{/if}
 				{#each project.content.paragraphs as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}

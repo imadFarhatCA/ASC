@@ -11,7 +11,7 @@ export const projectsFr = {
 			cid: 'cid-v1v8Xy09F9',
 			scopeOfWork: 'Design & Exécution complète (Coentreprise avec Antar Architects & Build)',
 			sector: 'Commerce de détail',
-			projectSize: '-'
+			projectSize: '45 mètres carrés'
 		},
 		content: {
 			cid: 'cid-v1v8XydUlR',
@@ -19,7 +19,7 @@ export const projectsFr = {
 				'Nous avons assuré la conception et l\'exécution complète de Chocoville au Koweït, couvrant la planification des espaces, le développement du design intérieur, la création de mobilier sur mesure et l\'ensemble des travaux d\'aménagement.'
 			],
 			blockquote:
-				'Notre périmètre d\'intervention comprenait les travaux de démolition et de préparation, les plafonds et cloisons en gypse, les revêtements de sol et muraux, les installations vitrées, la peinture, la menuiserie sur mesure, les plans de travail en Corian, la signalétique, ainsi que les travaux de plomberie et d\'électricité.',
+				'Notre périmètre d\'intervention comprenait les travaux de démolition et de préparation, les plafonds et cloisons en gypse, les revêtements de sol et muraux, les installations vitrées, la peinture, la menuiserie sur mesure, les plans de travail en Corian, la signalétique, ainsi que les travaux MEP.',
 			trailing: [
 				'Nous avons coordonné et supervisé l\'ensemble des sous-traitants spécialisés afin de garantir une exécution de haute qualité, le respect des normes de sécurité et la livraison dans les délais.'
 			]
@@ -51,7 +51,7 @@ export const projectsFr = {
 			cid: 'cid-uSDoFksFrt',
 			scopeOfWork: 'Rénovation complète de tous les étages de deux bâtiments hospitaliers connectés',
 			sector: 'Rénovation accélérée',
-			projectSize: '15 600 mètres carrés',
+			projectSize: '15 600 m²',
 			location: 'Kuwait City, Koweït',
 			status: 'Réalisé 2015 – 2020',
 			client: 'Hôpital Taiba'
@@ -98,29 +98,30 @@ export const projectsFr = {
 		},
 		features: {
 			cid: 'cid-v5ySpfGrXg',
-			scopeOfWork: 'Rénovation complète',
-			sector: 'Résidentiel',
-			projectSize: 'À déterminer'
+			scopeOfWork: 'Conception et construction',
+			sector: 'Résidentiel / Maison d\'Été',
+			projectSize: 'À déterminer',
+			location: 'Al Wafrah, Koweït',
+			status: 'Réalisé – 2021'
 		},
 		content: {
 			cid: 'cid-v5ySpgab4N',
 			paragraphs: [
-				'Une rénovation résidentielle complète réalisée avec un souci du détail, de la qualité et des standards modernes de vie.'
+				'Précision et qualité d\'exécution.',
+				'Nous avons mené à bien le projet de la Maison d\'Été Al Wafrah au Koweït, en assurant à la fois la conception architecturale et l\'exécution complète des travaux de construction. En partenariat avec Antar Architects, nous avons développé le concept architectural et l\'avons traduit en solution constructible, tout en préservant l\'architecture curviligne distinctive du projet et ses espaces intérieurs raffinés. Le périmètre d\'intervention a inclus la mise en œuvre intégrale des détails architecturaux, des finitions et de la coordination structurelle, garantissant que la vision du projet soit respectée à chaque étape de la réalisation.'
 			],
 			blockquote:
-				'Le projet de la Maison d\'Été Al Wafrah a porté sur la rénovation intégrale d\'une propriété résidentielle, couvrant tous les espaces intérieurs et extérieurs. Chaque élément a été soigneusement exécuté pour répondre aux normes résidentielles élevées tout en préservant le caractère et le confort de l\'espace.',
-			trailing: [
-				'Rénovation résidentielle complète · Périmètre intérieur et extérieur intégral · Finitions de haute qualité dans l\'ensemble · Exécution soignée selon les normes résidentielles modernes'
-			]
+				'Chaque phase, des travaux de structure jusqu\'à l\'intégration des installations mécaniques et électriques, a été exécutée avec une rigueur et une précision exemplaires, assurant une parfaite cohérence entre l\'intention de conception et la construction finale. Le résultat est une résidence d\'été durable et élégamment réalisée, témoignant de notre engagement envers l\'excellence en conception et en exécution.',
+			trailing: []
 		},
 		gallery: {
 			cid: 'cid-v5ySpgBPeF',
 			alt: 'Maison d\'Été Al Wafrah',
 			images: [
-				'img-20250626-wa0009-1-816x458.jpg',
-				'img-20250626-wa0013-816x458.jpg',
-				'img-20250626-wa0015-816x458.jpg',
-				'img-20250626-wa0016-816x458.jpg',
+				'cp-w-1600x800.jpg',
+				'img-20250626-wa0020-1-1600x900.jpg',
+				't2-1-816x459.jpg',
+				't3-1-816x469.jpg',
 				'img-20250626-wa0031-816x612.jpg',
 				'img-20250626-wa0035-816x458.jpg',
 				'img-20250626-wa0038-816x458.jpg'
@@ -140,19 +141,18 @@ export const projectsFr = {
 			cid: 'cid-v1vfaUtRTc',
 			scopeOfWork: 'Aménagement de bureaux / Exécution intérieure',
 			sector: 'Commercial / Bureaux',
-			projectSize: '90 mètres carrés'
+			projectSize: '90 mètres carrés',
+			location: 'Kuwait City, Koweït',
+			status: 'Réalisé – 2019'
 		},
 		content: {
 			cid: 'cid-v1vfaUIPKV',
 			paragraphs: [
-				'Réalisé en 2019',
-				'Précision et fonctionnalité dans les espaces de travail.'
+				'Précision et fonctionnalité dans les espaces de travail.',
+				'Notre exécution du projet des bureaux ASC a consisté à réunir deux unités de bureaux en une seule entité privée, en assurant une intégration harmonieuse des finitions architecturales et intérieures. Chaque détail — des cloisons aux éléments encastrés, en passant par la coordination mécanique et électrique — a été livré avec précision pour créer un espace de travail cohérent et professionnel. Ce projet illustre notre engagement envers une construction de qualité et un design fonctionnel dans les environnements commerciaux.'
 			],
-			blockquote:
-				'Notre exécution du projet des bureaux ASC a consisté à réunir deux unités de bureaux en une seule entité privée, en assurant une intégration harmonieuse des finitions architecturales et intérieures. Chaque détail — des cloisons aux éléments encastrés, en passant par la coordination mécanique et électrique — a été livré avec précision pour créer un espace de travail cohérent et professionnel.',
-			trailing: [
-				'Ce projet illustre notre engagement envers une construction de qualité et un design fonctionnel dans les environnements commerciaux.'
-			]
+			blockquote: '',
+			trailing: []
 		},
 		gallery: {
 			cid: 'cid-v1vfaURBZT',
@@ -181,8 +181,11 @@ export const projectsFr = {
 		features: {
 			cid: 'cid-v1v0rVzMW5',
 			scopeOfWork: 'Conception et construction d\'espaces de laboratoire avancés',
-			sector: 'Santé',
-			projectSize: '1 500 mètres carrés'
+			sector: 'Conception et construction',
+			projectSize: '1 500 m²',
+			location: 'Kuwait City, Koweït',
+			status: 'Réalisé – 2020',
+			client: 'Elaj Medical Services'
 		},
 		content: {
 			cid: 'cid-v1v0rVOtBY',
@@ -228,18 +231,18 @@ export const projectsFr = {
 			cid: 'cid-v1vbJcr1ps',
 			scopeOfWork: 'Exécution complète des travaux de construction',
 			sector: "Commercial / Éducatif / Établissement pour enfants",
-			projectSize: '323 mètres carrés'
+			projectSize: '323 mètres carrés',
+			location: 'Kuwait City, Koweït',
+			status: 'Réalisé – 2019'
 		},
 		content: {
 			cid: 'cid-v1vbJcFYNh',
 			paragraphs: [
-				'Réalisé en 2019 — Construire des espaces d\'apprentissage et de jeu.'
+				'Construire des espaces d\'apprentissage et de jeu.',
+				"Nous avons exécuté le projet Hub Enfants Oleana au Koweït avec précision et souci du détail, livrant un environnement dynamique qui favorise le bien-être des enfants tout en assurant le confort fonctionnel des parents. Notre équipe a mis en œuvre tous les éléments architecturaux, intérieurs et structurels, y compris des structures de jeu spécialisées, des zones multifonctionnelles et des espaces d'attente pour les parents, selon des standards exigeants. Les finitions, palettes de couleurs et textures ont été soigneusement choisies pour créer un espace chaleureux, sécurisé et stimulant. Le résultat est un hub pleinement réalisé où design ludique et construction de haute qualité se fondent harmonieusement."
 			],
-			blockquote:
-				"Nous avons exécuté le projet Hub Enfants Oleana au Koweït avec précision et souci du détail, livrant un environnement dynamique qui favorise le bien-être des enfants tout en assurant le confort fonctionnel des parents. Notre équipe a mis en œuvre tous les éléments architecturaux, intérieurs et structurels, y compris des structures de jeu spécialisées, des zones multifonctionnelles et des espaces d'attente pour les parents, selon des standards exigeants.",
-			trailing: [
-				'Les finitions, palettes de couleurs et textures ont été soigneusement choisies pour créer un espace chaleureux, sécurisé et stimulant. Le résultat est un hub pleinement réalisé où design ludique et construction de haute qualité se fondent harmonieusement.'
-			]
+			blockquote: '',
+			trailing: []
 		},
 		gallery: {
 			cid: 'cid-v1vbJcOToo',

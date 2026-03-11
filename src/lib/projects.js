@@ -11,7 +11,7 @@ export const projects = {
 			cid: 'cid-v1v8Xy09F9',
 			scopeOfWork: 'Full Design & Execution (Joint Venture with Antar Architects & Build)',
 			sector: 'Retail',
-			projectSize: '-'
+			projectSize: '45 Square Meters'
 		},
 		content: {
 			cid: 'cid-v1v8XydUlR',
@@ -19,7 +19,7 @@ export const projects = {
 				'We delivered the complete design and execution of Chocoville in Kuwait, covering space planning, interior design development, custom-made furniture creation, and all fit-out works.'
 			],
 			blockquote:
-				'Our scope of work included demolition and preparation works, gypsum ceilings and partitions, floor and wall finishes, glass installations, painting, bespoke joinery, Corian countertops, signage, as well as plumbing and electrical works.',
+				'Our scope of work included demolition and preparation works, gypsum ceilings and partitions, floor and wall finishes, glass installations, painting, bespoke joinery, Corian countertops, signage, as well as MEP works.',
 			trailing: [
 				'We coordinated and supervised all specialized subcontractors to ensure high-quality execution, compliance with safety standards, and on-time delivery.'
 			]
@@ -51,7 +51,7 @@ export const projects = {
 			cid: 'cid-uSDoFksFrt',
 			scopeOfWork: 'Full renovation of all floors in two connected hospital buildings',
 			sector: 'Fast-track renovation',
-			projectSize: '15,600 Square Meters',
+			projectSize: '15,600 m²',
 			location: 'Kuwait City, Kuwait',
 			status: 'Executed 2015 – 2020',
 			client: 'Taiba Hospital'
@@ -98,29 +98,30 @@ export const projects = {
 		},
 		features: {
 			cid: 'cid-v5ySpfGrXg',
-			scopeOfWork: 'Full Renovation',
-			sector: 'Residential',
-			projectSize: 'TBD'
+			scopeOfWork: 'Design & Build',
+			sector: 'Residential / Summer House',
+			projectSize: 'TBD',
+			location: 'Al Wafrah, Kuwait',
+			status: 'Executed – 2021'
 		},
 		content: {
 			cid: 'cid-v5ySpgab4N',
 			paragraphs: [
-				'A full residential renovation delivered with attention to quality, detail, and modern living standards.'
+				'Precision Quality Execution.',
+				'We successfully delivered the Al Wafrah Summer House project in Kuwait, providing both the architectural design and full construction execution of the residence. Our partnership with Antar architects, we developed the design concept and translated it into a buildable solution while maintaining the project\'s distinctive curvilinear architecture and refined interior spaces. The scope included the complete implementation of architectural details, finishes, and structural coordination, ensuring the design vision was carried through every stage of the project.'
 			],
 			blockquote:
-				'The Al Wafrah Summer House project involved the complete renovation of a residential property, covering all interior and exterior scopes. Every element was carefully executed to meet high residential standards while preserving the character and comfort of the space.',
-			trailing: [
-				'Full Residential Renovation · Complete interior and exterior scope · High-quality finishes throughout · Careful execution to modern residential standards'
-			]
+				'Every phase from structural works to mechanical and electrical integration was executed with rigorous quality control and precision, guaranteeing seamless alignment between the design intent and the final construction. The result is a durable and elegantly crafted summer residence that reflects our commitment to excellence in both design and project execution.',
+			trailing: []
 		},
 		gallery: {
 			cid: 'cid-v5ySpgBPeF',
 			alt: 'Al Wafrah Summer House',
 			images: [
-				'img-20250626-wa0009-1-816x458.jpg',
-				'img-20250626-wa0013-816x458.jpg',
-				'img-20250626-wa0015-816x458.jpg',
-				'img-20250626-wa0016-816x458.jpg',
+				'cp-w-1600x800.jpg',
+				'img-20250626-wa0020-1-1600x900.jpg',
+				't2-1-816x459.jpg',
+				't3-1-816x469.jpg',
 				'img-20250626-wa0031-816x612.jpg',
 				'img-20250626-wa0035-816x458.jpg',
 				'img-20250626-wa0038-816x458.jpg'
@@ -140,19 +141,18 @@ export const projects = {
 			cid: 'cid-v1vfaUtRTc',
 			scopeOfWork: 'Office Fit-Out / Interior Execution',
 			sector: 'Commercial / Offices',
-			projectSize: '90 Square Meters'
+			projectSize: '90 Square Meters',
+			location: 'Kuwait City, Kuwait',
+			status: 'Executed – 2019'
 		},
 		content: {
 			cid: 'cid-v1vfaUIPKV',
 			paragraphs: [
-				'Executed – 2019',
-				'Precision and Functionality in Workspaces.'
+				'Precision and Functionality in Workspaces.',
+				'Our execution of the ASC Offices project involved joining two office units into a single private entity, ensuring seamless integration of architectural and interior finishes. Every detail—from partitions and built-in elements to mechanical and electrical coordination—was delivered with precision to create a cohesive and professional workspace. The project exemplifies our commitment to quality construction and functional design in commercial environments.'
 			],
-			blockquote:
-				'Our execution of the ASC Offices project involved joining two office units into a single private entity, ensuring seamless integration of architectural and interior finishes. Every detail—from partitions and built-in elements to mechanical and electrical coordination—was delivered with precision to create a cohesive and professional workspace.',
-			trailing: [
-				'The project exemplifies our commitment to quality construction and functional design in commercial environments.'
-			]
+			blockquote: '',
+			trailing: []
 		},
 		gallery: {
 			cid: 'cid-v1vfaURBZT',
@@ -181,8 +181,11 @@ export const projects = {
 		features: {
 			cid: 'cid-v1v0rVzMW5',
 			scopeOfWork: 'Design and Build of advanced laboratory spaces',
-			sector: 'Health Care',
-			projectSize: '1,500 Square Meters'
+			sector: 'Design and Build',
+			projectSize: '1,500 m²',
+			location: 'Kuwait City, Kuwait',
+			status: 'Executed – 2020',
+			client: 'Elaj Medical Services'
 		},
 		content: {
 			cid: 'cid-v1v0rVOtBY',
@@ -228,18 +231,18 @@ export const projects = {
 			cid: 'cid-v1vbJcr1ps',
 			scopeOfWork: 'Full Construction Execution',
 			sector: "Commercial / Educational / Children's Facility",
-			projectSize: '323 Square Meters'
+			projectSize: '323 Square Meters',
+			location: 'Kuwait City, Kuwait',
+			status: 'Executed – 2019'
 		},
 		content: {
 			cid: 'cid-v1vbJcFYNh',
 			paragraphs: [
-				'Executed – 2019, Constructing Spaces for Learning and Play.'
+				'Constructing Spaces for Learning and Play.',
+				"We executed the Oleana Children Hub project in Kuwait with precision and attention to detail, delivering a dynamic environment that supports children's well-being while ensuring functional comfort for parents. Our team implemented all architectural, interior, and structural elements, including specialized play structures, multifunctional zones, and parent waiting areas, with exacting standards. The finishes, color palettes, and textures were carefully executed to create a warm, secure, and engaging space. The result is a fully realized hub where playful design and high-quality construction merge seamlessly."
 			],
-			blockquote:
-				"We executed the Oleana Children Hub project in Kuwait with precision and attention to detail, delivering a dynamic environment that supports children's well-being while ensuring functional comfort for parents. Our team implemented all architectural, interior, and structural elements, including specialized play structures, multifunctional zones, and parent waiting areas, with exacting standards.",
-			trailing: [
-				'The finishes, color palettes, and textures were carefully executed to create a warm, secure, and engaging space. The result is a fully realized hub where playful design and high-quality construction merge seamlessly.'
-			]
+			blockquote: '',
+			trailing: []
 		},
 		gallery: {
 			cid: 'cid-v1vbJcOToo',

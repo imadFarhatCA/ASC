@@ -1,101 +1,102 @@
 <script>
 	let { data } = $props();
 	const { project } = data;
-	const modalId = `${project.slug}-modal`;
-	const lightboxId = `lb-${project.slug}`;
+	const { slug } = project;
+	const modalId = `${slug}-modal`;
+	const lightboxId = `lb-${slug}`;
 </script>
 
 <svelte:head>
-	<title>{project.title} | Art Specialized Construction</title>
+	<title>{project.meta.title}</title>
 </svelte:head>
 
-<section data-bs-version="5.1" class="buildm5 header1 mbr-fullscreen" id="header1-{project.slug}"
-	style="background-image: url('{project.heroImage}');">
+<section data-bs-version="5.1" class="buildm5 header1 mbr-fullscreen" id="header1-{slug}" style="background-image: url('{project.header.heroImage}');">
 	<div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);"></div>
 	<div class="container">
 		<div class="row">
 			<div class="content-wrap col-12 col-md-12">
-				{#if project.heroSubtitle}
-					<h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-4 display-7">{project.heroSubtitle}</h2>
-				{/if}
+				<h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-4 display-7">{project.header.subtitle}</h2>
 				<div class="col-12"><div class="line"></div></div>
-				<h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">{project.title}</h1>
+				<h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">{project.header.title}</h1>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section data-bs-version="5.1" class="features9 cid-features-{project.slug}" id="features-{project.slug}">
+<section data-bs-version="5.1" class="features9 {project.features.cid}" id="afeatures9-{slug}" style="padding-top: 5rem;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-text">
 				<div class="lists-container">
-					{#if project.scopeOfWork}
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
-							<div class="card-box">
+							<div class="card-box" style="text-align: center;">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>1.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SCOPE OF WORK</h4>
-									<p class="card-text mbr-fonts-style display-7">{project.scopeOfWork}</p>
+									<p class="card-text mbr-fonts-style display-7">{project.features.scopeOfWork}</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					{/if}
-					{#if project.sector}
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
-							<div class="card-box">
+							<div class="card-box" style="text-align: center;">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>2.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SECTOR</h4>
-									<p class="card-text mbr-fonts-style display-7">{project.sector}</p>
+									<p class="card-text mbr-fonts-style display-7">{project.features.sector}</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					{/if}
-					{#if project.projectSize}
 					<div class="card col-12 col-md-3">
 						<div class="card-wrapper col-12">
-							<div class="card-box">
+							<div class="card-box" style="text-align: center;">
 								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>3.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">PROJECT SIZE</h4>
-									<p class="card-text mbr-fonts-style display-7">{project.projectSize}</p>
+									<p class="card-text mbr-fonts-style display-7">{project.features.projectSize}</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					{/if}
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-{#if project.paragraphs?.length || project.blockquote || project.trailing?.length}
-<section data-bs-version="5.1" class="content2 cid-content-{project.slug}" id="content-{project.slug}">
+{#if project.features?.location || project.features?.status || project.features?.client}
+<section style="padding: 4rem 0 0;">
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-9">
-				{#if project.location || project.status || project.client}
-				<div style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem;">
-					{#if project.location}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Location:</span> <span class="mbr-fonts-style display-4">{project.location}</span></div>{/if}
-					{#if project.status}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Status:</span> <span class="mbr-fonts-style display-4">{project.status}</span></div>{/if}
-					{#if project.client}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Client:</span> <span class="mbr-fonts-style display-4">{project.client}</span></div>{/if}
+				<div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 2rem;">
+					{#if project.features.location}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Location:</span> <span class="mbr-fonts-style display-4">{project.features.location}</span></div>{/if}
+					{#if project.features.status}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Status:</span> <span class="mbr-fonts-style display-4">{project.features.status}</span></div>{/if}
+					{#if project.features.client}<div><span class="mbr-fonts-style display-4" style="font-weight:600;">Client:</span> <span class="mbr-fonts-style display-4">{project.features.client}</span></div>{/if}
 				</div>
-				{/if}
-				{#each project.paragraphs ?? [] as p}
+			</div>
+		</div>
+	</div>
+</section>
+{/if}
+
+{#if project.content}
+<section data-bs-version="5.1" class="content2 {project.content.cid}" id="content02-{slug}">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-9">
+				{#each project.content.paragraphs as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}
-				{#if project.blockquote}
+				{#if project.content.blockquote}
 					<blockquote>
-						<p class="quote mbr-fonts-style display-4">{project.blockquote}</p>
+						<p class="quote mbr-fonts-style display-4">{project.content.blockquote}</p>
 					</blockquote>
 				{/if}
-				{#each project.trailing ?? [] as p}
+				{#each project.content.trailing as p}
 					<p class="mbr-text mbr-fonts-style display-4">{p}</p>
 				{/each}
 			</div>
@@ -104,14 +105,13 @@
 </section>
 {/if}
 
-{#if project.images?.length}
-<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5 cid-gallery-{project.slug}" id="gallery-{project.slug}">
+<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5 {project.gallery.cid}" id="agallery3-{slug}">
 	<div class="container">
 		<div class="row mbr-gallery items-row justify-content-center">
-			{#each project.images as img, i}
+			{#each project.gallery.images as img, i}
 			<div class="col-12 col-md-6 col-lg-4 item gallery-image">
 				<div class="item-wrapper" data-bs-toggle="modal" data-bs-target="#{modalId}">
-					<img class="w-100" src={img} alt={project.title} data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
+					<img class="w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
 					<div class="img-overlay"></div>
 					<div class="icon-wrapper"><span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span></div>
 				</div>
@@ -124,9 +124,9 @@
 					<div class="modal-body">
 						<div class="carousel slide" id="{lightboxId}" data-bs-interval="5000">
 							<div class="carousel-inner">
-								{#each project.images as img, i}
+								{#each project.gallery.images as img, i}
 								<div class="carousel-item {i === 0 ? 'active' : ''}">
-									<img class="d-block w-100" src={img} alt="">
+									<img class="d-block w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="">
 								</div>
 								{/each}
 							</div>
@@ -144,4 +144,3 @@
 		</div>
 	</div>
 </section>
-{/if}
