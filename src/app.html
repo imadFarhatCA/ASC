@@ -19,7 +19,17 @@
 		<link rel="stylesheet" href="/assets/dropdown/css/style.css" />
 		<link rel="stylesheet" href="/assets/theme/css/style.css" />
 		<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" />
-		<style>body, body * { font-family: 'Poppins', sans-serif !important; } p, blockquote { text-align: justify !important; } .card-box p, .card-box h3, .card-box h4 { text-align: center !important; } .mbr-gallery .modal .close::before { font-family: 'Moririse2' !important; }</style>
+		<style>
+		body, body * { font-family: 'Poppins', sans-serif !important; }
+		p, blockquote { text-align: justify !important; }
+		.card-box p, .card-box h3, .card-box h4 { text-align: center !important; }
+		.mbr-gallery .modal .close::before { font-family: 'Moririse2' !important; }
+		/* Bootstrap 5 modal full-screen fix for gallery lightbox */
+		.mbr-gallery .modal-dialog { width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+		.mbr-gallery .modal-content, .mbr-gallery .modal-body { height: 100vh; display: flex; align-items: center; justify-content: center; }
+		.mbr-gallery .modal-body img { max-height: 90vh; width: auto !important; max-width: 100%; object-fit: contain; }
+		.modal-backdrop.show { opacity: 0.85 !important; }
+	</style>
 	%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
