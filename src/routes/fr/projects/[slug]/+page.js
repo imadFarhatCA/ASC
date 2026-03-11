@@ -1,4 +1,3 @@
-import { projectsFr } from '$lib/projects.fr.js';
 import { error } from '@sveltejs/kit';
 
 export const prerender = true;
@@ -10,7 +9,7 @@ let _apiCache = null;
 
 async function fetchProjects() {
 	if (_apiCache) return _apiCache;
-	const res = await fetch(`${API_URL}?api_key=${API_KEY}`);
+	const res = await fetch(`${API_URL}?api_key=${API_KEY}&lang=fr`);
 	if (!res.ok) throw new Error(`API ${res.status}`);
 	const data = await res.json();
 	_apiCache = data.projects ?? [];
@@ -30,7 +29,10 @@ function apiToFrFormat(p) {
 			cid: '',
 			scopeOfWork: p.scopeOfWork ?? '-',
 			sector: p.sector ?? '-',
-			projectSize: p.projectSize ?? '-'
+			projectSize: p.projectSize ?? '-',
+			location: p.location ?? '',
+			status: p.projectStatus ?? '',
+			client: p.client ?? ''
 		},
 		content: {
 			cid: '',
@@ -48,24 +50,15 @@ function apiToFrFormat(p) {
 }
 
 export async function entries() {
-	const localSlugs = Object.keys(projectsFr).map(slug => ({ slug }));
 	try {
 		const apiProjects = await fetchProjects();
-		const apiOnlySlugs = apiProjects
-			.filter(p => !projectsFr[p.slug])
-			.map(p => ({ slug: p.slug }));
-		return [...localSlugs, ...apiOnlySlugs];
+		return apiProjects.map(p => ({ slug: p.slug }));
 	} catch {
-		return localSlugs;
+		return [];
 	}
 }
 
 export async function load({ params }) {
-	// Prefer local French translation
-	if (projectsFr[params.slug]) {
-		return { project: projectsFr[params.slug] };
-	}
-	// Fall back to API data
 	try {
 		const apiProjects = await fetchProjects();
 		const p = apiProjects.find(p => p.slug === params.slug);

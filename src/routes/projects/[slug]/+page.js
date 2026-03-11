@@ -1,10 +1,20 @@
 import { error } from '@sveltejs/kit';
-import { projects as localProjects } from '$lib/projects.js';
 
 export const prerender = true;
 
 const API_KEY = 'wcp_cffcc6f7ea36df1ca3506479132dc4ce432bc6f2';
 const API_URL = 'https://website-control-panel.pages.dev/api/projects';
+
+let _cache = null;
+
+async function fetchProjects() {
+	if (_cache) return _cache;
+	const res = await fetch(`${API_URL}?api_key=${API_KEY}&lang=en`);
+	if (!res.ok) throw new Error(`API error: ${res.status}`);
+	const data = await res.json();
+	_cache = data.projects ?? [];
+	return _cache;
+}
 
 function nestApiProject(p) {
 	return {
@@ -21,7 +31,7 @@ function nestApiProject(p) {
 			sector: p.sector ?? '',
 			projectSize: p.projectSize ?? '',
 			location: p.location ?? '',
-			status: p.status ?? '',
+			status: p.projectStatus ?? '',
 			client: p.client ?? ''
 		},
 		content: {
@@ -39,30 +49,16 @@ function nestApiProject(p) {
 	};
 }
 
-let _cache = null;
-
-async function fetchProjects() {
-	if (_cache) return _cache;
-	const res = await fetch(`${API_URL}?api_key=${API_KEY}`);
-	if (!res.ok) throw new Error(`API error: ${res.status}`);
-	const text = await res.text();
-	let data;
-	try { data = JSON.parse(text); } catch { throw new Error('API returned non-JSON'); }
-	_cache = data.projects ?? [];
-	return _cache;
-}
-
 export async function entries() {
-	return Object.keys(localProjects).map(slug => ({ slug }));
+	try {
+		const projects = await fetchProjects();
+		return projects.map(p => ({ slug: p.slug }));
+	} catch {
+		return [];
+	}
 }
 
 export async function load({ params }) {
-	// Use local data if available (already nested)
-	if (localProjects[params.slug]) {
-		return { project: localProjects[params.slug] };
-	}
-
-	// Fall back to API for slugs not in local data
 	try {
 		const projects = await fetchProjects();
 		const p = projects.find(p => p.slug === params.slug);
