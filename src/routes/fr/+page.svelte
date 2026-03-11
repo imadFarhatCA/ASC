@@ -163,7 +163,7 @@
                             <strong>Pourquoi Art Specialized Construction</strong>
                         </p>
                     </div>
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">Au cœur de chaque projet se trouve une promesse : Offrir qualité, intégrité et savoir-faire qui résistent à l'épreuve du temps.&nbsp;</h2>
+                    <h2 class="mbr-section-title mbr-fonts-style display-2">Au cœur de chaque projet se trouve une promesse :<br>Offrir qualité, intégrité et savoir-faire qui résistent à l'épreuve du temps.&nbsp;</h2>
                 </div>
             </div>
         </div>
