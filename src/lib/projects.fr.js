@@ -100,7 +100,7 @@ export const projectsFr = {
 			cid: 'cid-v5ySpfGrXg',
 			scopeOfWork: 'Conception et construction',
 			sector: 'Résidentiel / Maison d\'Été',
-			projectSize: 'À déterminer',
+			projectSize: '500 m²',
 			location: 'Al Wafrah, Koweït',
 			status: 'Réalisé – 2021'
 		},

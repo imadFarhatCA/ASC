@@ -100,7 +100,7 @@ export const projects = {
 			cid: 'cid-v5ySpfGrXg',
 			scopeOfWork: 'Design & Build',
 			sector: 'Residential / Summer House',
-			projectSize: 'TBD',
+			projectSize: '500 m²',
 			location: 'Al Wafrah, Kuwait',
 			status: 'Executed – 2021'
 		},
