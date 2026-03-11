@@ -79,7 +79,7 @@
                         <img src="/assets/images/artspecialized-icon.png-96x127.png" alt="Art Specialized Construction" style="height: 4.1rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-5" href="/fr">Art Specialized Construction</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption display-5" style="color: #5e6466 !important;" href="/fr">Art Specialized Construction</a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
