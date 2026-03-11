@@ -6,6 +6,9 @@
     .cid-uJmLvvI4S8 .navbar-caption {
         font-size: 0.85em !important;
     }
+    .cid-uJmLvvI4S8 .navbar-caption .navbar-subtitle {
+        font-size: 0.65em !important;
+    }
 }
 .lang-toggle {
     display: flex;
@@ -80,7 +83,7 @@
                         <img src="/assets/images/artspecialized-icon.png-96x127.png" alt="Art Specialized Construction" style="height: 4.1rem;">
                     </a>
                 </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption display-5" style="color: #5e6466 !important;" href="/">Art Specialized Construction</a></span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption display-5" style="color: #5e6466 !important; line-height: 1.0 !important;" href="/">Art Specialized Construction<span class="navbar-subtitle" style="font-size: 0.55em; font-weight: 400; letter-spacing: 0.05em; color: #8a8a8a; display: block; margin-top: 1px;">Realizing Visions</span></a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -92,9 +95,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/company">the Company</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/projects">the Projects</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/contact">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" style="color: #5e6466 !important;" href="/company">the Company</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" style="color: #5e6466 !important;" href="/projects">the Projects</a></li>
+                    <li class="nav-item"><a class="nav-link link display-4" style="color: #5e6466 !important;" href="/contact">Contact us</a></li>
                     <li class="nav-item lang-toggle-item">
                         <div class="lang-toggle" data-active="EN">
                             <a href="/" class="lang-option active" aria-label="English">EN</a>
