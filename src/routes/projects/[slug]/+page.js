@@ -11,7 +11,9 @@ async function fetchProjects() {
 	if (_cache) return _cache;
 	const res = await fetch(`${API_URL}?api_key=${API_KEY}`);
 	if (!res.ok) throw new Error(`API error: ${res.status}`);
-	const data = await res.json();
+	const text = await res.text();
+	let data;
+	try { data = JSON.parse(text); } catch { throw new Error('API returned non-JSON'); }
 	_cache = data.projects ?? [];
 	return _cache;
 }
@@ -28,8 +30,13 @@ export async function entries() {
 }
 
 export async function load({ params }) {
-	const projects = await fetchProjects();
-	const project = projects.find(p => p.slug === params.slug);
-	if (!project) throw error(404, 'Project not found');
-	return { project };
+	try {
+		const projects = await fetchProjects();
+		const project = projects.find(p => p.slug === params.slug);
+		if (!project) throw error(404, 'Project not found');
+		return { project };
+	} catch (e) {
+		if (e.status === 404) throw e;
+		throw error(404, 'Project not found');
+	}
 }
