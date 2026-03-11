@@ -1,5 +1,5 @@
 <style>
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
     .cid-uJmLvvI4S8 .navbar-logo img {
         height: 4.9rem !important;
     }
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
     .lang-toggle-item {
         margin-left: 0;
         justify-content: center;
@@ -71,7 +71,7 @@
 </style>
 
 <section data-bs-version="5.1" class="menu menu2 cid-uJmLvvI4S8" id="menu2-1">
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-xl">
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-xxl">
         <div class="container">
             <div class="navbar-brand">
                 <span class="navbar-logo">
