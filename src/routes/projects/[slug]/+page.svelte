@@ -23,15 +23,15 @@
 	</div>
 </section>
 
-<section data-bs-version="5.1" class="features9 {project.features.cid}" id="afeatures9-{slug}" style="padding-top: 5rem;">
+<section data-bs-version="5.1" class="features9" id="afeatures9-{slug}" style="padding-top: 5rem; padding-bottom: 3rem; background-color: #fafafa;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-text">
 				<div class="lists-container">
 					<div class="card col-12 col-md-3">
-						<div class="card-wrapper col-12">
-							<div class="card-box" style="text-align: center;">
-								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>1.</strong></h3>
+						<div class="card-wrapper col-12" style="padding: 30px;">
+							<div class="card-box" style="text-align: center; display: flex; flex-direction: column;">
+								<h3 class="card-number mbr-fonts-style mb-0 display-1" style="color: #877f75; width: 100%;"><strong>1.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SCOPE OF WORK</h4>
 									<p class="card-text mbr-fonts-style display-7">{project.features.scopeOfWork}</p>
@@ -40,9 +40,9 @@
 						</div>
 					</div>
 					<div class="card col-12 col-md-3">
-						<div class="card-wrapper col-12">
-							<div class="card-box" style="text-align: center;">
-								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>2.</strong></h3>
+						<div class="card-wrapper col-12" style="padding: 30px;">
+							<div class="card-box" style="text-align: center; display: flex; flex-direction: column;">
+								<h3 class="card-number mbr-fonts-style mb-0 display-1" style="color: #877f75; width: 100%;"><strong>2.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">SECTOR</h4>
 									<p class="card-text mbr-fonts-style display-7">{project.features.sector}</p>
@@ -51,9 +51,9 @@
 						</div>
 					</div>
 					<div class="card col-12 col-md-3">
-						<div class="card-wrapper col-12">
-							<div class="card-box" style="text-align: center;">
-								<h3 class="card-number mbr-fonts-style mb-0 display-1"><strong>3.</strong></h3>
+						<div class="card-wrapper col-12" style="padding: 30px;">
+							<div class="card-box" style="text-align: center; display: flex; flex-direction: column;">
+								<h3 class="card-number mbr-fonts-style mb-0 display-1" style="color: #877f75; width: 100%;"><strong>3.</strong></h3>
 								<div class="card-content">
 									<h4 class="card-title mbr-fonts-style display-4">PROJECT SIZE</h4>
 									<p class="card-text mbr-fonts-style display-7">{project.features.projectSize}</p>
@@ -84,7 +84,7 @@
 {/if}
 
 {#if project.content}
-<section data-bs-version="5.1" class="content2 {project.content.cid}" id="content02-{slug}">
+<section data-bs-version="5.1" class="content2" id="content02-{slug}">
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-9">
@@ -105,13 +105,13 @@
 </section>
 {/if}
 
-<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5 {project.gallery.cid}" id="agallery3-{slug}">
+<section data-bs-version="5.1" class="gallery3 mbr-gallery shopm5" id="agallery3-{slug}">
 	<div class="container">
-		<div class="row mbr-gallery items-row justify-content-center">
+		<div class="row mbr-gallery items-row justify-content-center" style="row-gap: 32px;">
 			{#each project.gallery.images as img, i}
 			<div class="col-12 col-md-6 col-lg-4 item gallery-image">
 				<div class="item-wrapper" data-bs-toggle="modal" data-bs-target="#{modalId}">
-					<img class="w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}">
+					<img class="w-100" src={project.gallery.fullUrls ? img : `/assets/images/${img}`} alt="{project.gallery.alt}" data-bs-slide-to="{i}" data-bs-target="#{lightboxId}" style="aspect-ratio: 4/3; object-fit: cover;">
 					<div class="img-overlay"></div>
 					<div class="icon-wrapper"><span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span></div>
 				</div>
