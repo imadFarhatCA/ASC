@@ -24,7 +24,7 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                <form action="https://formsubmit.co/info@artspecialized.com" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
+                <form action="https://formsubmit.co/8bdf8fc9d9df668018e61562abb610a6" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
                     <input type="hidden" name="_subject" value="New Contact Form - Art Specialized Construction">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="false">
