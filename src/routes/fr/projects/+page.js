@@ -13,7 +13,7 @@ const CATEGORY_FR = {
 
 export async function load() {
 	try {
-		const res = await fetch(`${API_URL}?api_key=${API_KEY}`);
+		const res = await fetch(`${API_URL}?api_key=${API_KEY}&lang=fr`);
 		if (!res.ok) throw new Error(`API ${res.status}`);
 		const data = await res.json();
 		const projects = (data.projects ?? []).map(p => ({
