@@ -27,7 +27,7 @@
                 <form action="https://formsubmit.co/8bdf8fc9d9df668018e61562abb610a6" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
                     <input type="hidden" name="_subject" value="New Contact Form - Art Specialized Construction">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="false">
+                    <input type="hidden" name="_next" value="https://artspecializedconstruction.pages.dev/contact">
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
