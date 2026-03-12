@@ -1,3 +1,17 @@
+<script>
+	import { onMount } from 'svelte';
+	onMount(() => {
+		const form = document.querySelector('form[action*="formsubmit"]');
+		if (form) {
+			form.addEventListener('submit', (e) => {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+				form.submit();
+			}, true);
+		}
+	});
+</script>
+
 <svelte:head>
 	<title>Contact Us | Art Specialized Construction</title>
 </svelte:head>
